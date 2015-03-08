@@ -368,6 +368,6 @@ a.edu {
 }
 
 a { /* BOOTSTRAP OVERWRITE */
-	color: white;
+	color: black;
 	text-decoration: none;
 }
