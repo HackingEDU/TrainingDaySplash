@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Animated Background Headers
 =========
 
@@ -14,3 +15,9 @@ Read more here: [License](http://tympanus.net/codrops/licensing/)
 [© Codrops 2014](http://www.codrops.com)
 
 
+=======
+Official Training Day Page for HackingEdu
+========================
+
+>>>>>>> 548ae75faf1b2e289cf84b2c1840d6bc01e2cefd
+# TrainingDaySplash
