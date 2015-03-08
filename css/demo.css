@@ -194,6 +194,10 @@ p.ref {
 	}
 }
 
+/* =========================================================================
+                           Sponsor Logo Layout
+   =======================================================================*/
+
 #sponsor-logos {
   margin: 40px 20%;
   padding: 0;
@@ -282,4 +286,45 @@ a.edu {
 
 #partner-logos.sponsors .doctorate a img#next36{
   padding-top:3rem;
+}
+
+/* =========================================================================
+                           Main Page Signup Buttons
+   =======================================================================*/
+.volunteer-btn {
+    padding: 15px 51px;
+}
+
+.sponsor-btn-pad {
+    padding: 15px 59px;
+}
+
+.main-btn {
+    margin-top: 1em;
+    margin-right: .5em;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.247059);
+    color: #fff;
+    border-radius: 10px;
+    /*-moz-border-radius: 10px;*/
+    /*-webkit-border-radius: 10px;*/
+    /* border: none; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* text-decoration: none; */
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    /* max-width: 236px; */
+    /* cursor: pointer; */
+    transition-duration: .4s;
+}
+.apply-btn {
+    padding: 15px;
+}
+.main-btn:hover {
+    background: rgba(255, 255, 255, 0.6);
+    color: black;
+    border: 2px solid #fff;
 }
