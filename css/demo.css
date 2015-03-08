@@ -193,3 +193,93 @@ p.ref {
 		font-size: 2.5em;
 	}
 }
+
+#sponsor-logos {
+  margin: 40px 20%;
+  padding: 0;
+  max-width: 60%;
+}
+
+section.sponsors { 
+  z-index: 5;
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 2em;
+  font-family: lato, sans-serif;
+  color: #57655f;
+  text-align:center;
+}
+
+.sponsors a {
+  height: 4rem;
+  float: left;
+  display: inline-block;
+  padding: 1rem 0;
+}
+
+.sponsors img {
+  max-height: 100%;
+  max-width: 95%;
+  display: block;
+  margin: auto;
+}
+
+.sponsors .rollover img {
+  -webkit-filter: grayscale(1) opacity(0.5);
+  filter:grayscale(1) opacity(0.5);
+}
+.sponsors .rollover img:hover {
+  -webkit-filter: none;
+  filter:none;
+}
+
+.sponsors .sophomore, .sponsors .masters, .sponsors .senior, .sponsors .junior, .sponsors .freshman{
+  display: inline-block;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.sponsors .masters a {
+  height: 16rem;
+  width: 100%;
+}
+
+.sponsors .senior a {
+  height: 5.5rem <!--13rem-->;
+  width: 25%;
+}
+
+.sponsors .junior a.ubc {
+  width: 16%;
+}
+
+.sponsors .sophomore a {
+  height: 5.5rem;
+  width: 50%;
+}
+
+.sponsors .freshman a {
+  height: 3.6rem;
+  width: 25%;
+}
+
+.sponsors .sophomore a, .sponsors .masters a, .sponsors .senior a, .sponsors .junior a, .sponsors .freshman a {
+  position: relative;
+}
+
+a.edu {
+  margin-top:50px;
+  height: 4em!important;
+}
+
+
+#partner-logos.sponsors .doctorate a {
+  height: 12rem;
+  width: 33%;
+}
+
+#partner-logos.sponsors .doctorate a img#next36{
+  padding-top:3rem;
+}
