@@ -50,7 +50,8 @@ p.ref {
 	margin: 0 auto;
 	padding: 2em;
 	text-align: center;
-	max-width: 900px;
+	max-width: 100%;
+    background-color:azure
 }
 
 .codrops-header h1 {
@@ -197,11 +198,10 @@ p.ref {
 /* =========================================================================
                            Sponsor Logo Layout
    =======================================================================*/
-
 #sponsor-logos {
   margin: 40px 20%;
   padding: 0;
-  max-width: 60%;
+  max-width: 100%;
 }
 
 section.sponsors { 
@@ -246,22 +246,22 @@ section.sponsors {
 }
 
 .sponsors .masters a {
-  height: 16rem;
+  height: 8rem;
   width: 100%;
 }
 
 .sponsors .senior a {
-  height: 5.5rem <!--13rem-->;
-  width: 25%;
+  height: 7rem <!--13rem-->;
+  width: 50%;
 }
 
-.sponsors .junior a.ubc {
+.sponsors .partner a.ubc {
   width: 16%;
 }
 
-.sponsors .sophomore a {
+.sponsors .junior a {
   height: 5.5rem;
-  width: 50%;
+  width: 33%;
 }
 
 .sponsors .freshman a {
@@ -281,7 +281,7 @@ a.edu {
 
 #partner-logos.sponsors .doctorate a {
   height: 12rem;
-  width: 33%;
+  width: 100%;
 }
 
 #partner-logos.sponsors .doctorate a img#next36{
@@ -371,3 +371,4 @@ a { /* BOOTSTRAP OVERWRITE */
 	color: black;
 	text-decoration: none;
 }
+
