@@ -1,17 +1,16 @@
-Pure CSS Layout Examples
-========================
+Animated Background Headers
+=========
 
-Layout examples using [Pure CSS][pure] compiled from the [pure-site][] project.
+A collection of animated background header effects for your inspiration. We use Canvas and Javascript to create an animated background for large site headers.
 
-[pure]: http://purecss.io/
-[pure-site]: https://github.com/yahoo/pure-site
+[Article on Codrops](http://tympanus.net/codrops/?p=20153)
+
+[Demo](http://tympanus.net/Development/AnimatedHeaderBackgrounds/)
+
+Integrate or build upon it for free in your personal or commercial projects. Don't republish, redistribute or sell "as-is". 
+
+Read more here: [License](http://tympanus.net/codrops/licensing/)
+
+[© Codrops 2014](http://www.codrops.com)
 
 
-License
--------
-
-This software is free to use under the Yahoo! Inc. BSD license.
-See the [LICENSE file][] for license text and copyright information.
-
-[LICENSE file]: https://github.com/yahoo/pure-site/blob/master/LICENSE.md
-# TrainingDaySplash
