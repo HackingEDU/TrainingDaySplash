@@ -57,7 +57,9 @@
                 <div class="codrops-header">
                     <h1>This is Training Day for HackingEDU<span>Learn how to the use new API's and Frameworks from the coolest tech companies to win the world's largest education hackathon in the world!</span></h1>
                     <nav class="codrops-demos" style="text-align:center;">
-                            <h2>Friday</h2>
+        <section>
+            <h1>Schedule</h1><br>
+                <h2>Friday</h2>
         <strong><table align="center" style="border-collapse: separate; border-spacing: 30px 0px;">
             <thead>
                 <tr>
@@ -93,31 +95,54 @@
                     <td align="left">Classroom</td>
                 </tr>
             </tbody>
-        </table></strong>
+        </table></strong><br><hr>
+    </section>
         
                        </nav>
                 </div>
             </div>
-            <!-- Related demos -->
-            <section class="related">
-                <p>If you enjoyed this demo you might also like:</p>
-                <a href="http://tympanus.net/Development/HeaderEffects/">
-                    <img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2013/07/HeaderEffects-300x162.jpg" />
-                    <h3>On Scroll Header Effects</h3>
-                </a>
-                <a href="http://tympanus.net/Development/ArticleIntroEffects/">
-                    <img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2014/05/ArticleIntroEffects-300x162.png" />
-                    <h3>Inspiration for Article Intro Effects</h3>
-                </a>
-            </section>
 
+
+    <section>
+        <div class="codrops-header">
+        <h1>FAQ</h1>
+        <a id="hacker_faq_link" href="">Hacker FAQ</a> | <a id="sponsor_faq_link" href="">Sponsor FAQ</a> | <a id="other_faq_link" href="">Other</a>
+        <div id="hacker_faq">
+            <h3>Hacker Question 1</h3>
+            <p>This is an answer.</p>
+
+            <h3>Hacker Question 2</h3>
+            <p>This is an answer.</p>
+        </div>
+
+        <div id="sponsor_faq" style="display: none;">
+            <h3>Sponsor Question 1</h3>
+            <p>This is an answer.</p>
+
+            <h3>Sponsor Question 2</h3>
+            <p>This is an answer.</p>
+        </div>
+
+        <div id="other_faq" style="display: none;">
+            <h3>Other Question 1</h3>
+            <p>This is an answer.</p>
+
+            <h3>Other Question 2</h3>
+            <p>This is an answer.</p>
+        </div>
+    </content>
+    </section>
+
+    <section>
+        <div class="codrops-header">
+            <h1>Sponsors</h1>
+            <p>Logos go here</p>
+        </div>
+    </section>
 		</div><!-- /container -->
 
 
-
-
-
-
+<<<<<<< HEAD
                 <div class="codrops-top clearfix">
                     <a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/OffCanvasMenuEffects/"><span>Previous Demo</span></a>
                     <a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=20153"><span>Back to the Codrops Article</span></a>
@@ -200,9 +225,58 @@
     
     
         </div><!-- /container -->
+=======
+>>>>>>> origin/master
         <script src="js/TweenLite.min.js"></script>
         <script src="js/EasePack.min.js"></script>
         <script src="js/rAF.js"></script>
         <script src="js/demo-3.js"></script>
+<<<<<<< HEAD
 	</body>
 </html>
+=======
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    </body>
+    <script>
+        //used for changing faq display
+
+        var activeFaq = $('#hacker_faq');
+
+        $('#hacker_faq_link').click(function(e) {
+            e.preventDefault();
+            if (activeFaq.attr('id') === 'hacker_faq') {
+                return;
+            }
+
+            activeFaq.css({display: 'none'});
+            activeFaq = $('#hacker_faq');
+            activeFaq.css({display: 'inherit'});
+        });
+
+        $('#sponsor_faq_link').click(function(e) {
+            e.preventDefault();
+            if (activeFaq.attr('id') === 'sponsor_faq') {
+                return;
+            }
+
+            activeFaq.css({display: 'none'});
+            activeFaq = $('#sponsor_faq');
+            activeFaq.css({display: 'inherit'});
+
+        });
+
+        $('#other_faq_link').click(function(e) {
+            e.preventDefault();
+            if (activeFaq.attr('id') === 'other_faq') {
+                return;
+            }
+
+            activeFaq.css({display: 'none'});
+            activeFaq = $('#other_faq');
+            activeFaq.css({display: 'inherit'});
+
+        });
+    </script>
+</html>
+>>>>>>> origin/master
