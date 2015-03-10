@@ -1,3 +1,57 @@
+
+/* =========================================================================
+                           CSS Framework Helpers
+   =======================================================================*/
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+.mg-top-none {
+    margin-top: 0;
+}
+.mg-t-3em {
+    margin-top: 3em;
+}
+.mg-t-2.5em {
+    margin-top: 2.5em;
+}
+.mg-bottom-none {
+    margin-bottom: 0;
+}
+.mg-bottom-7em {
+    margin-bottom: 7em;
+}
+.marg-t-4em {
+  margin-top: 4em;
+}
+.mg-r-2em {
+  margin-right: 2em;
+}
+.marg-btm-9em {
+  margin-bottom: 9em;
+}
+.marg-left-6 {
+  margin-left: 6.3em;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.horizontally-center {
+  text-align: center;
+}
+/*.vertically-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+*/
+
+
+
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -1533,7 +1587,7 @@ h1, h2, h3, h4, h5, h6 {
 
 html, body {
   height: 100%; }
-  
+
 body {
   text-rendering: optimizeLegibility; }
 
@@ -1635,7 +1689,7 @@ header {
     float: left;
     height: 13em;
     right: 0;
-    top: 0; 
+    top: 0;
     padding-left:10px;
 margin-top:10px;
   }
@@ -1656,7 +1710,7 @@ margin-top:10px;
   #hero .text {
     float: left;
     text-transform: uppercase;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
     @media (max-width: 767px) {
       #hero .text {
@@ -1820,15 +1874,15 @@ margin-top:10px;
       text-transform: uppercase;
       font-weight: 700;
       color: #57655f; }
-      
-      
+
+
 #sponsor-logos {
   margin: 40px 20%;
   padding: 0;
   max-width: 60%;
 }
 
-section.sponsors { 
+section.sponsors {
   z-index: 5;
   font-weight: 700;
   font-size: 2em;
@@ -1977,9 +2031,9 @@ section .header-frame {
         #faq article .question h3 em {
           text-transform: none; }
       #faq article.faq-prose {
-        display:block; 
+        display:block;
         margin: 10% 20% 0 20%;
-      }     
+      }
       #faq article.faq-prose .question h3 {
         text-transform: none;
         font-size: 2.7em;
@@ -1993,12 +2047,12 @@ section .header-frame {
         color: black;
         font-weight: 900;
         margin-bottom: .1em;
-        margin-top: 0.3em; 
+        margin-top: 0.3em;
         color: #444; }
       #faq article .question p {
         color: #444;
         font-weight: 200;
-        line-height: 1.5em; 
+        line-height: 1.5em;
         margin-top:0.4em;
         font-size:1.4em;}
 
@@ -2012,26 +2066,26 @@ section .header-frame {
   padding: 50px 0; }
   #hardware .header-frame {
     background-color: #8FBE00;
-  } 
-  
+  }
+
 
 #sustainability {
   padding: 50px 0; }
   #sustainability .header-frame {
     background-color: #7DB99E;
-  } 
-  
+  }
+
 #sponsors {
   padding: 50px 0; }
   #sponsors .header-frame {
     background-color: #FF6B6B;
-  } 
-  
+  }
+
 #contact {
   padding: 50px 0; }
   #contact .header-frame {
     background-color: #336699;
-  } 
+  }
 
 
 
@@ -2121,7 +2175,7 @@ header.sponsor-header {
     transform: translateY(-50%);
     font-size: 5em;
     text-align: center; }
-    
+
   #hero.sponsor-hero.faq h2 {
     position: relative;
     padding-top:10%;
