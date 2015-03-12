@@ -436,12 +436,12 @@ section.sponsors {
 }
 
 .sponsors .masters a {
-  height: 8rem;
+  height: 20rem;
   width: 100%;
 }
 
 .sponsors .senior a {
-  height: 7rem <!--13rem-->;
+  height: 6rem;
   width: 50%;
 }
 
@@ -569,4 +569,3 @@ a { /* BOOTSTRAP OVERWRITE */
 	color: black;
 	text-decoration: none;
 }
-
