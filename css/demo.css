@@ -388,6 +388,23 @@ p.ref {
 /* =========================================================================
                            Sponsor Logo Layout
    =======================================================================*/
+section#faq {
+	background: url('../img/beaut1.png');
+	background-size: cover;
+	background-attachment: fixed;
+}
+section#sponsors {
+	background: url('../img/Paypal Hq.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+section#sponsor-logos.sponsors{
+        background-color: white;
+        background-size:cover;
+        background-attachment: fixed;
+        opacity: 0.85
+}
 #sponsor-logos {
   margin: 40px 20%;
   padding: 0;
@@ -438,6 +455,11 @@ section.sponsors {
 .sponsors .masters a {
   height: 20rem;
   width: 100%;
+}
+
+.sponsors .sophomore a {
+  height: 16rem;
+  width: 50%;
 }
 
 .sponsors .senior a {
