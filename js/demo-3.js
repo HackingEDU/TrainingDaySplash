@@ -42,8 +42,8 @@
 
     function tweenTriangle(tri) {
         var t = Math.random()*(2*Math.PI);
-        var x = (500+Math.random()*100)*Math.cos(t) + width*0.5;
-        var y = (500+Math.random()*100)*Math.sin(t) + height*0.5-20;
+        var x = (600+Math.random()*100)*Math.cos(t) + width*0.5;
+        var y = (600+Math.random()*100)*Math.sin(t) + height*0.5-20;
         var time = 4+3*Math.random();
 
         TweenLite.to(tri.pos, time, {x: x,
