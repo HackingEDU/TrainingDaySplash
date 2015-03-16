@@ -23,7 +23,11 @@
 }
 
 .demo-3 .large-header {
+<<<<<<< HEAD
 	background-image: #000;
+=======
+	background-image: black;
+>>>>>>> 97ceb0a1b560d5affda6fb7f1d70889955f364cc
 }
 
 .demo-4 .large-header {
@@ -103,6 +107,10 @@
 	.demo-2 .main-title {
 		font-size: 4em;
 	}
+<<<<<<< HEAD
 }font-size: 4em;
 	}
 }
+=======
+}
+>>>>>>> 97ceb0a1b560d5affda6fb7f1d70889955f364cc
