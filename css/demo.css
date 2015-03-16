@@ -496,8 +496,8 @@ section.sponsors {
   width: 50%;
 }
 
-.sponsors .partner a.ubc {
-  width: 16%;
+section#sponsor-logos {
+  border-radius: .18em;
 }
 
 .sponsors .junior a {
