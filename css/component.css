@@ -2,7 +2,7 @@
 .large-header {
 	position: relative;
 	width: 100%;
-	background: #333;
+	background: #000;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
@@ -23,7 +23,7 @@
 }
 
 .demo-3 .large-header {
-	background-image: url('../img/beaut4.png');
+	background-image: #000;
 }
 
 .demo-4 .large-header {
@@ -102,5 +102,7 @@
 
 	.demo-2 .main-title {
 		font-size: 4em;
+	}
+}font-size: 4em;
 	}
 }
