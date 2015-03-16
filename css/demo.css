@@ -515,6 +515,12 @@ section.sponsors {
 }
 
 @media (max-width: 991px) {
+  #sponsor-logos {
+    margin: 40px 5%;
+    padding: 0;
+    max-width: 100%;
+  }
+
   .sponsors .sophomore, .sponsors .masters, .sponsors .senior, .sponsors .junior, .sponsors .freshman{
     display: inline-block;
     margin-top: 1rem;
