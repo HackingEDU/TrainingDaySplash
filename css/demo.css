@@ -589,7 +589,7 @@ a.edu {
 
 .main-btn {
     margin-top: 1em;
-    margin-right: .5em;
+    /*margin-right: .5em;*/
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
