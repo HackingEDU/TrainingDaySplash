@@ -85,11 +85,7 @@
              ===================================================================== -->
         <div class="container codrops-header">
             <h1>This is HackingEDU Training Day<span>HackingEDU Training Day is a pre-hackathon event full of workshops & hands-on-trainings.  For an entire day, mentors and tech guides will give talks on various technologies and work with students to help them master the tools they will need to take their skills to the next level.</span></h1>
-<<<<<<< HEAD
             <h1>Why<span>Want to learn a new API, language or framework? Have a specific question or issue? Come to Training Day and learn from the best! Attendees are guaranteed admission to the main Hackathon in October and access to view the talks and recordings, so sign up today!</span></h1>
-=======
-            <h1>Why?<span>Want to learn a new API, language or framework? Have a specific question or issue? Come to Training Day and learn from the best! You also get guaranteed admission to the main Hackathon in October and access to view the talks and recordings, so sign up today!</span></h1>
->>>>>>> da5a9ded1a9198b083549bc0e782577babf55ed6
 
             <!-- Where nav started -->
 
@@ -253,7 +249,7 @@
         <!-- container div above-->
 
         <div class="videoContainer">
-            <video id="promo_video" controls>
+            <video controls>
                 <source src="./img/HackingEDU_promo_short.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
         </div>
@@ -585,29 +581,6 @@
                 activeFaq.css({display: 'inherit'});
 
             });
-        </script>
-
-        <script>
-        //video controls
-        var movie = document.getElementById('promo_video');
-        var isPlaying = false;
-
-        movie.addEventListener('play', function() {
-            isPlaying = true;
-        });
-
-        movie.addEventListener('pause', function() {
-            isPlaying = false;
-        });
-
-        movie.addEventListener('click', function() {
-            if (isPlaying) {
-              movie.pause();
-            } else {
-              movie.play();
-            }
-        });
-
         </script>
     </body>
 </html>
