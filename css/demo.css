@@ -238,7 +238,7 @@ p.ref {
 /* Header */
 .codrops-header {
 	margin: 0 auto;
-	padding: 2em;
+	padding: 10em 2em;
 	text-align: center;
 	max-width: 100%;
     background-color:white
@@ -397,6 +397,7 @@ section#faq {
 	background: #fff;
 	background-size: cover;
 	background-attachment: fixed;
+  padding: 10em 2em;
 }
 section#sponsors {
 	background: url('../img/Paypal Hq.jpg');
