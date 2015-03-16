@@ -388,6 +388,11 @@ p.ref {
 /* =========================================================================
                            Sponsor Logo Layout
    =======================================================================*/
+section#video {
+	background: #fff;
+	background-size: cover;
+	background-attachment: fixed;
+}
 section#faq {
 	background: #fff;
 	background-size: cover;
