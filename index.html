@@ -238,9 +238,11 @@
         <!-- </section> -->
 
         <div class="videoContainer">
+          <a href="">
             <video id="promo_video" controls>
                 <source src="./img/HackingEDU_promo_short.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
+          </a>
         </div>
 
         <!-- =========================================================================
@@ -527,7 +529,9 @@
             isPlaying = false;
         });
 
-        movie.addEventListener('click', function() {
+        movie.addEventListener('click', function(e) {
+          e.preventDefault();
+          
           if (isPlaying) {
             movie.pause();
           } else {
