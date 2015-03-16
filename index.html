@@ -50,9 +50,8 @@
                         </p>
                         <!-- Training Day button -->
                         <p class="m-t-1em lead row">
-                            <a class="main-btn sponsor-btn-pad col-xs-12 col-md-6"  href="https://jackiezhang.typeform.com/to/w6qOJT" data-mode="2" target="_blank">Apply Now</a>
-                            <a class="col-md-2"></a>
-                            <a class="main-btn sponsor-btn-pad col-xs-12 col-md-6"  href="https://jackiezhang.typeform.com/to/BEXo5M" data-mode="2" target="_blank">Sponsor</a>
+                            <a class="main-btn btn-1 sponsor-btn-pad col-xs-12 col-md-6"  href="https://jackiezhang.typeform.com/to/w6qOJT" data-mode="2" target="_blank">Apply Now</a>
+                            <a class="main-btn btn-2 sponsor-btn-pad col-xs-12 col-md-6"  href="https://jackiezhang.typeform.com/to/BEXo5M" data-mode="2" target="_blank">Sponsor</a>
                         </p>
 
                     </div>
@@ -239,7 +238,7 @@
         <!-- </section> -->
 
         <div class="videoContainer">
-            <video controls>
+            <video id="promo_video" controls>
                 <source src="./img/HackingEDU_promo_short.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
         </div>
@@ -515,6 +514,26 @@
             //     }
             //     return [index, start, end];
             // };
+
+        //video controls
+        var movie = document.getElementById('promo_video');
+        var isPlaying = false;
+
+        movie.addEventListener('play', function() {
+            isPlaying = true;
+        });
+
+        movie.addEventListener('pause', function() {
+            isPlaying = false;
+        });
+
+        movie.addEventListener('click', function() {
+          if (isPlaying) {
+            movie.pause();
+          } else {
+            movie.play();
+          }
+        });
 
         //used for changing faq display
             var activeFaq = $('#hacker_faq');
