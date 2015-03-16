@@ -424,162 +424,176 @@ div.codrops-header{
 }
 
 section#sponsor-logos.sponsors{
-        background-color: white;
-        background-size:cover;
-        background-attachment: fixed;
-        opacity: 0.85
+    background-color: white;
+    background-size:cover;
+    background-attachment: fixed;
+    opacity: 0.85
 }
 #sponsor-logos {
-  margin: 40px 20%;
-  padding: 0;
-  max-width: 100%;
+	margin: 40px 20%;
+	padding: 0;
+	max-width: 100%;
 }
 
 section.sponsors {
-  z-index: 5;
-  font-weight: 700;
-  font-size: 2em;
-  margin-bottom: 2em;
-  font-family: lato, sans-serif;
-  color: #57655f;
-  text-align:center;
+	z-index: 5;
+	font-weight: 700;
+	font-size: 2em;
+	margin-bottom: 2em;
+	font-family: lato, sans-serif;
+	color: #57655f;
+	text-align:center;
 }
 
 .sponsors a {
-  height: 4rem;
-  float: left;
-  display: inline-block;
-  padding: 1rem 0;
+	height: 4rem;
+	float: left;
+	display: inline-block;
+	padding: 1rem 0;
 }
 
 .sponsors img {
-  max-height: 100%;
-  max-width: 95%;
-  display: block;
-  margin: auto;
-  transition-duration: .4s;
+	max-height: 100%;
+	max-width: 95%;
+	display: block;
+	margin: auto;
+	transition-duration: .4s;
 }
 
 .sponsors .rollover img {
-  -webkit-filter: grayscale(1) opacity(0.5);
-  filter:grayscale(1) opacity(0.5);
+	-webkit-filter: grayscale(1) opacity(0.5);
+	filter:grayscale(1) opacity(0.5);
 }
 .sponsors .rollover img:hover {
-  -webkit-filter: none;
-  filter:none;
+	-webkit-filter: none;
+	filter:none;
 }
 
 .sponsors .sophomore, .sponsors .masters, .sponsors .senior, .sponsors .junior, .sponsors .freshman{
-  display: inline-block;
-  margin-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
-  width: 100%;
+	display: inline-block;
+	margin-top: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
 }
 
 .sponsors .masters a {
-  height: 20rem;
-  width: 100%;
+	height: 20rem;
+	width: 100%;
 }
 
 .sponsors .sophomore a {
-  height: 10rem;
-  width: 33%;
+	height: 10rem;
+	width: 33%;
 }
 .sponsors .sophomore > .pearlhacks {
-  height: 20rem;
-  margin-top: -5rem;
+	height: 20rem;
+	margin-top: -5rem;
 }
 
 .sponsors .senior a {
-  height: 6rem;
-  width: 50%;
+	height: 6rem;
+	width: 50%;
 }
 
 section#sponsor-logos {
-  border-radius: .18em;
+	border-radius: .18em;
 }
 
 .sponsors .junior a {
-  height: 5.5rem;
-  width: 33%;
+	height: 5.5rem;
+	width: 33%;
 }
 
 .sponsors .freshman a {
-  height: 3.6rem;
-  width: 25%;
+	height: 3.6rem;
+	width: 25%;
 }
 
 .sponsors .sophomore a, .sponsors .masters a, .sponsors .senior a, .sponsors .junior a, .sponsors .freshman a {
-  position: relative;
+	position: relative;
+}
+
+.mob-txt-enlrg {
+	font-size: 1.7em;
+	color: #95a5a6;
 }
 
 @media (max-width: 991px) {
-  #sponsor-logos {
-    margin: 40px 5%;
-    padding: 0;
-    max-width: 100%;
-  }
+	.mob-txt-enlrg {
+		font-size: 1.2em !important;
+		color: #95a5a6;
+	}
 
-  .sponsors .sophomore, .sponsors .masters, .sponsors .senior, .sponsors .junior, .sponsors .freshman{
-    display: inline-block;
-    margin-top: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #ccc;
-    /*width: 100%;*/
-  }
+	.mob-txt-enlrg {
+		font-size: 59%;
+	}
 
-  .sponsors .masters a {
-    height: 20rem;
-    width: 100%;
-  }
+	#sponsor-logos {
+		margin: 40px 5%;
+		padding: 0;
+		max-width: 100%;
+	}
 
-  .sponsors .sophomore a {
-    height: 10rem;
-    width: 100%;
-  }
-  .sponsors .sophomore > .pearlhacks {
-    height: 20rem;
-    margin-top: 0px;
-  }
+	.sponsors .sophomore, .sponsors .masters, .sponsors .senior, .sponsors .junior, .sponsors .freshman{
+		display: inline-block;
+		margin-top: 1rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid #ccc;
+		/*width: 100%;*/
+	}
 
-  .sponsors .senior a {
-    height: 6rem;
-    width: 100%;
-  }
+	.sponsors .masters a {
+		height: 20rem;
+		width: 100%;
+	}
 
-  .sponsors .partner a.ubc {
-    width: 16%;
-  }
+	.sponsors .sophomore a {
+		height: 10rem;
+		width: 100%;
+	}
+	.sponsors .sophomore > .pearlhacks {
+		height: 20rem;
+		margin-top: 0px;
+	}
 
-  .sponsors .junior a {
-    height: 5.5rem;
-    width: 100%;
-  }
+	.sponsors .senior a {
+		height: 6rem;
+		width: 100%;
+	}
 
-  .sponsors .freshman a {
-    height: 3.6rem;
-    width: 25%;
-  }
+	.sponsors .partner a.ubc {
+		width: 16%;
+	}
 
-  .sponsors .sophomore a, .sponsors .masters a, .sponsors .senior a, .sponsors .junior a, .sponsors .freshman a {
-    position: relative;
-  }
+	.sponsors .junior a {
+		height: 5.5rem;
+		width: 100%;
+	}
+
+	.sponsors .freshman a {
+		height: 3.6rem;
+		width: 25%;
+	}
+
+	.sponsors .sophomore a, .sponsors .masters a, .sponsors .senior a, .sponsors .junior a, .sponsors .freshman a {
+		position: relative;
+	}
 }
 
 a.edu {
-  margin-top:50px;
-  height: 4em!important;
+	margin-top:50px;
+	height: 4em!important;
 }
 
 
 #partner-logos.sponsors .doctorate a {
-  height: 12rem;
-  width: 100%;
+	height: 12rem;
+	width: 100%;
 }
 
 #partner-logos.sponsors .doctorate a img#next36{
-  padding-top:3rem;
+	padding-top:3rem;
 }
 
 /* =========================================================================
