@@ -17,6 +17,19 @@ video {
    width: 100%;
    height: auto;
    max-height: 100%;
+<<<<<<< HEAD
+=======
+}
+.video {
+	width: 100%;
+	height: 57em;
+}
+
+.video iframe {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+>>>>>>> 169aa7e4fcd36be0549bdb30bfe8eaedeb6d64a4
 }
 /* =========================================================================
                                  Random
