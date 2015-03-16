@@ -14,14 +14,14 @@
    =======================================================================*/
 
 asdf
-body {
+/*body {
     margin: 0;
     padding: 0;
-}
+}*/
 .video {
-	position: absolute;
-	left: 0;
-	top: 0;
+	/*position: absolute;*/
+	/*left: 0;*/
+	/*top: 0;*/
 	width: 100%;
 	height: 100%
 }
