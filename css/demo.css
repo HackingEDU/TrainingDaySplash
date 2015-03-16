@@ -35,11 +35,11 @@
                            Schedule Section
    =======================================================================*/
 
-/*section#Schedule {
-	background: url('./img/Paypal Hq.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-}*/
+section#Schedule {
+  background: url('../img/beaut1.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .icon-wkshp {
 	width: 2em;
@@ -388,6 +388,11 @@ p.ref {
 /* =========================================================================
                            Sponsor Logo Layout
    =======================================================================*/
+section#video {
+	background: #fff;
+	background-size: cover;
+	background-attachment: fixed;
+}
 section#faq {
 	background: #fff;
 	background-size: cover;
