@@ -249,7 +249,7 @@
         <!-- container div above-->
 
         <div class="videoContainer">
-            <video controls>
+            <video id="promo_video" controls>
                 <source src="./img/HackingEDU_promo_short.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
         </div>
@@ -402,6 +402,29 @@
                 activeFaq.css({display: 'inherit'});
 
             });
+        </script>
+
+        <script>
+        //video controls
+        var movie = document.getElementById('promo_video');
+        var isPlaying = false;
+
+        movie.addEventListener('play', function() {
+            isPlaying = true;
+        });
+
+        movie.addEventListener('pause', function() {
+            isPlaying = false;
+        });
+
+        movie.addEventListener('click', function() {
+            if (isPlaying) {
+              movie.pause();
+            } else {
+              movie.play();
+            }
+        });
+
         </script>
     </body>
 </html>
