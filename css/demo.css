@@ -628,6 +628,12 @@ a.edu {
     /* cursor: pointer; */
     transition-duration: .4s;
 }
+.btn-1 {
+    margin-left: -.5em;
+}
+.btn-2 {
+    margin-left: .5em;
+}
 .apply-btn {
     padding: 15px;
 }
@@ -638,10 +644,9 @@ a.edu {
     border: 2px solid #fff;
 }
 
-@media screen and (max-width: 460px) {
-
-	.btn-top {
-		margin-top: 1.5em;
+@media (max-width: 991px) {
+	.btn-1, .btn-2 {
+		margin-left: 0;
 	}
 }
 
