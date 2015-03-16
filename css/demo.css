@@ -389,7 +389,7 @@ p.ref {
                            Sponsor Logo Layout
    =======================================================================*/
 section#faq {
-	background: url('../img/beaut1.png');
+	background: #fff;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -400,7 +400,7 @@ section#sponsors {
 }
 
 div.codrops-header{
-    background: url('../img/beaut1.png');
+    background: #fff;
 	background-size: cover;
 	background-attachment: fixed;
 }
