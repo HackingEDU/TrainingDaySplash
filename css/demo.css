@@ -486,6 +486,10 @@ section.sponsors {
   height: 10rem;
   width: 33%;
 }
+.sponsors .sophomore > .pearlhacks {
+  height: 20rem;
+  margin-top: -5rem;
+}
 
 .sponsors .senior a {
   height: 6rem;
@@ -508,6 +512,53 @@ section.sponsors {
 
 .sponsors .sophomore a, .sponsors .masters a, .sponsors .senior a, .sponsors .junior a, .sponsors .freshman a {
   position: relative;
+}
+
+@media (max-width: 991px) {
+  .sponsors .sophomore, .sponsors .masters, .sponsors .senior, .sponsors .junior, .sponsors .freshman{
+    display: inline-block;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    /*width: 100%;*/
+  }
+
+  .sponsors .masters a {
+    height: 20rem;
+    width: 100%;
+  }
+
+  .sponsors .sophomore a {
+    height: 10rem;
+    width: 100%;
+  }
+  .sponsors .sophomore > .pearlhacks {
+    height: 20rem;
+    margin-top: 0px;
+  }
+
+  .sponsors .senior a {
+    height: 6rem;
+    width: 100%;
+  }
+
+  .sponsors .partner a.ubc {
+    width: 16%;
+  }
+
+  .sponsors .junior a {
+    height: 5.5rem;
+    width: 100%;
+  }
+
+  .sponsors .freshman a {
+    height: 3.6rem;
+    width: 25%;
+  }
+
+  .sponsors .sophomore a, .sponsors .masters a, .sponsors .senior a, .sponsors .junior a, .sponsors .freshman a {
+    position: relative;
+  }
 }
 
 a.edu {
