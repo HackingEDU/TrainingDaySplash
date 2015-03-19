@@ -473,7 +473,7 @@ section.sponsors {
 	filter:none;
 }
 
-.sponsors .sophomore, .sponsors .masters, .sponsors .senior, .sponsors .junior, .sponsors .freshman{
+.sponsors .sophomore, .sponsors .masters, .sponsors .masters-2, .sponsors .senior, .sponsors .junior, .sponsors .freshman{
 	display: inline-block;
 	margin-top: 1rem;
 	padding-bottom: 1rem;
@@ -481,7 +481,14 @@ section.sponsors {
 	width: 100%;
 }
 
+.sponsors .masters {
+	padding: 6rem 0;
+}
 .sponsors .masters a {
+	height: 11rem;
+	width: 100%;
+}
+.sponsors .masters-2 a {
 	height: 20rem;
 	width: 100%;
 }
@@ -514,7 +521,7 @@ section#sponsor-logos {
 	width: 25%;
 }
 
-.sponsors .sophomore a, .sponsors .masters a, .sponsors .senior a, .sponsors .junior a, .sponsors .freshman a {
+.sponsors .sophomore a, .sponsors .masters a, .sponsors .masters-2 a, .sponsors .senior a, .sponsors .junior a, .sponsors .freshman a {
 	position: relative;
 }
 
@@ -543,7 +550,7 @@ section#sponsor-logos {
 		max-width: 100%;
 	}
 
-	.sponsors .sophomore, .sponsors .masters, .sponsors .senior, .sponsors .junior, .sponsors .freshman{
+	.sponsors .sophomore, .sponsors .masters, .sponsors .masters-2, .sponsors .senior, .sponsors .junior, .sponsors .freshman{
 		display: inline-block;
 		margin-top: 1rem;
 		padding-bottom: 1rem;
@@ -551,7 +558,15 @@ section#sponsor-logos {
 		/*width: 100%;*/
 	}
 
+  .sponsors .masters {
+  	padding: 6rem 0;
+  }
 	.sponsors .masters a {
+		height: 11rem;
+		width: 100%;
+	}
+
+  .sponsors .masters-2 a {
 		height: 20rem;
 		width: 100%;
 	}
@@ -584,7 +599,7 @@ section#sponsor-logos {
 		width: 25%;
 	}
 
-	.sponsors .sophomore a, .sponsors .masters a, .sponsors .senior a, .sponsors .junior a, .sponsors .freshman a {
+	.sponsors .sophomore a, .sponsors .masters a, .sponsors .masters-2 a, .sponsors .senior a, .sponsors .junior a, .sponsors .freshman a {
 		position: relative;
 	}
 }
