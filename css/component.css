@@ -142,4 +142,8 @@ video {
 	.demo-2 .main-title {
 		font-size: 4em;
 	}
+
+	.main-title > img {
+		padding: 0 25%;
+	}
 }
