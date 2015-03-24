@@ -51,7 +51,7 @@ video {
 	background-position: center bottom;
 }
 
-.demo-3 .large-header {
+.demo-3a .large-header {
 	background-image: #000;
 }
 
@@ -82,7 +82,7 @@ video {
 }
 
 .demo-1 .main-title,
-.demo-3 .main-title {
+.demo-3a .main-title {
 	text-transform: uppercase;
 	font-size: 4.2em;
 	letter-spacing: 0.1em;
@@ -113,7 +113,7 @@ video {
 	transform: translate3d(-50%,-50%,0);
 }
 
-.demo-3 .main-title {
+.demo-3a .main-title {
 	padding: 10px 40px;
 	border: none;
 	text-transform: uppercase;
@@ -134,7 +134,7 @@ video {
 
 @media only screen and (max-width : 768px) {
 	.demo-1 .main-title,
-	.demo-3 .main-title,
+	.demo-3a .main-title,
 	.demo-4 .main-title {
 		font-size: 3em;
 	}
