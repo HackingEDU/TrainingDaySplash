@@ -57,8 +57,8 @@
     // Event handling
     function addListeners() {
         window.addEventListener('scroll', scrollCheck);
-        /* Commented resize to fix button hiding problem */
-        // window.addEventListener('resize', resize);
+        /* Comment resize to fix button hiding problem (reproduce logo problem) */
+        window.addEventListener('resize', resize);
     }
 
     function scrollCheck() {
