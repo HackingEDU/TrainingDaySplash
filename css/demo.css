@@ -571,6 +571,12 @@ section#sponsor-logos {
 		width: 100%;
 	}
 
+  .sponsors .masters-ibm a {
+		height: 15rem;
+		width: 90%;
+	}
+
+
 	.sponsors .sophomore a {
 		height: 10rem;
 		width: 100%;
