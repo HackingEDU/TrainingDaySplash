@@ -1,4 +1,7 @@
 
+                                  #GUIDELINES
+
+
 1) Make sure you GIT PULL all changes from the TrainingDaySplash Directory
 
 2) Work on your assigned changes LOCALLY
