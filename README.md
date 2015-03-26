@@ -1,5 +1,4 @@
-
-                                  #GUIDELINES
+##GUIDELINES
 
 
 1) Make sure you GIT PULL all changes from the TrainingDaySplash Directory
