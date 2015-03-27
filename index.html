@@ -27,7 +27,7 @@
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
         <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline' rel='stylesheet' type='text/css'>
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
 
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
@@ -296,10 +296,16 @@
                                         FAQ Section
              ===================================================================== -->
         <section id="faq" class="container">
+
             <h1>FAQ</h1>
             <a id="hacker_faq_link" class="mob-txt-enlrg" style="color:blue;" href="">Hacker FAQ</a> | <a id="sponsor_faq_link" class="mob-txt-enlrg" style="color:blue;" href="">Sponsor FAQ</a> <!-- | <a id="other_faq_link" href="">Other --></a>
             <div class="m-b-14em m-t-2em">
                 <div id="hacker_faq">
+         <div class="col-lg-3">
+                        <h3>What should I bring?</h3>
+                        <p class="mob-txt-enlrg">A government or student ID, your laptop, and a hunger for learning!</p>
+                    </div>
+
                     <div class="col-lg-3">
                         <h3>Will there be food?</h3>
                         <p class="mob-txt-enlrg">YES! We are providing food & beverages for all attendees at no cost.</p>
@@ -308,16 +314,19 @@
                         <h3>How can I get a shuttle to my school?</h3>
                         <p class="mob-txt-enlrg">Send us an email at <a href="mailto:team@hackingedu.co">team@hackingedu.co</a> and get your friends to sign up! Shuttles will be provided to the schools with the largest amount of signups in the SF Bay Area.</p>
                     </div>
+
+
+                                <div class="col-lg-3">
+                        <h3>What is a Hackathon?</h3>
+                        <p class="mob-txt-enlrg">A hackathon is an student event where teams of 2-5 people collaborate on an application within the specified time limit. Prizes will be awarded to the most innovative, polished, and education tech problem solving hack.</p>
+                    </div>
                     <div class="col-lg-3">
                         <h3>How do I get there?</h3>
                         <p class="mob-txt-enlrg">We will have shuttles available from UC Davis, UC Berkeley and San Francisco. There is also ample parking if you want to drive, and you can also take Caltrain/Public Transportation.
                           <a target="rss" href="https://www.google.com/maps/dir//PayPal,+2211+N+1st+St,+San+Jose,+CA+95131,+United+States/@37.376984,-121.922703,17z/data=!4m12!1m3!3m2!1s0x808fcbe88aee163b:0xd6064b10b2260381!2sPayPal!4m7!1m0!1m5!1m1!1s0x808fcbe88aee163b:0xd6064b10b2260381!2m2!1d-121.922703!2d37.376984">Directions to Training Day</a>
                         </p>
                     </div>
-                    <div class="col-lg-3">
-                        <h3>What should I bring?</h3>
-                        <p class="mob-txt-enlrg">A government or student ID, your laptop, and a hunger for learning!</p>
-                    </div>
+                   
                 </div>
 
                 <div id="sponsor_faq" style="display: none;">
@@ -338,28 +347,7 @@
                 </div>
             </div>
 
-            <!--   <div id="other_faq" style="display: none;">
-                <h3>Other Question 1</h3>
-                <p>This is an answer.</p>
 
-                <h3>Other Question 2</h3>
-                <p>This is an answer.</p>
-
-
-                <h3>Other Question 1</h3>
-                <p>This is an answer.</p>
-
-                <h3>Other Question 2</h3>
-                <p>This is an answer.</p>
-
-
-                <h3>Other Question 1</h3>
-                <p>This is an answer.</p>
-
-                <h3>Other Question 2</h3>
-                <p>This is an answer.</p>
-
-            </div> -->
         </section>
 
         <!-- =========================================================================
@@ -375,12 +363,12 @@
                     <div class="masters-2">
                         <a href="http://paypal.com" class="rollover"><img src="img/paypalLogo.jpg"></a>
                         <a href="http://ibm.com" class="rollover"><img src="img/ibmLogo.jpg"></a>
+                        <a href="http://automattic.com" class="rollover"><img src="img/automatticLogo.jpg"></a>
 
                     </div>
               			<div class="senior">
                         <!-- <a href="http://moxtra.com" class="rollover"><img src="img/moxtraLogo.png"></a> -->
                         <a href="http://developer.getpebble.com" class="rollover"><img src="img/pebbleLogo.png"></a>
-                        <a href="http://datastax.com" class="rollover" style="margin: -1rem 0 1rem;"><img src="img/datastaxLogo.png"></a>
                         <a href="http://makeschool.com" class="rollover"><img src="img/makeschoolLogo.png"></a>
                         <a href="http://thalmic.com" class="rollover"><img style="width: 9em" src="img/thalmiclabs.png"></a>
                     </div>
@@ -393,6 +381,9 @@
                         <a href="http://edsurge.com" class=" rollover"><img src="img/edsurgeLogo2.jpg"></a>
                         <a href="http://google.com" class=" rollover"><img src="img/google.png"></a>
                         <a href="http://firebase.com" class=" rollover"><img src="img/firebaseLogo.png"></a>
+                        <a href="http://twilio.com" class=" rollover"><img src="img/twilioLogo.png"></a>
+                        <a href="http://gundb.io" class=" rollover"><img src="img/gunIcon.png"></a>
+                        
               			</div>
                     <h2>Partners</h2>
               			<div class="sophomore" style="border-bottom: none;">
@@ -424,174 +415,6 @@
 
 </script>
         <script>
-        // Custom Video Controls
-            // if (window.webshim) {
-            //     (function () {
-
-            //         webshim.setOptions('mediaelement', {
-            //             replaceUI: 'auto'
-            //         });
-            //         webshim.setOptions({types: 'range'});
-            //         webshim.setOptions('extendNative', true);
-            //         webshim.polyfill('mediaelement forms forms-ext');
-            //     })();
-            // }
-
-
-            //add some controls
-            // jQuery(function ($) {
-            //     $('div.player').each(function () {
-            //         var player = this;
-            //         var getSetCurrentTime = createGetSetHandler(
-
-            //         function () {
-            //             $('input.time-slider', player).prop('value', $.prop(this, 'currentTime'));
-            //         }, function () {
-            //             try {
-            //                 $('video, audio', player).prop('currentTime', $.prop(this, 'value'));
-            //             } catch (er) {}
-            //         });
-            //         var getSetVolume = createGetSetHandler(
-
-            //         function () {
-            //             $('input.volume-slider', player).prop('value', $.prop(this, 'volume'));
-
-            //         }, function () {
-            //             $('video, audio', player).prop('volume', $.prop(this, 'value'));
-            //         });
-            //         $('video, audio', this).bind('durationchange updateMediaState', function () {
-            //             var duration = $.prop(this, 'duration');
-            //             if (!duration) {
-            //                 return;
-            //             }
-            //             $('input.time-slider', player).prop({
-            //                 'max': duration,
-            //                 disabled: false
-            //             });
-            //             $('span.duration', player).text(duration);
-            //         }).bind('progress updateMediaState', function () {
-            //             var buffered = $.prop(this, 'buffered');
-            //             if (!buffered || !buffered.length) {
-            //                 return;
-            //             }
-            //             buffered = getActiveTimeRange(buffered, $.prop(this, 'currentTime'));
-            //             $('span.progress', player).text(buffered[2]);
-            //         }).bind('timeupdate', function () {
-            //             $('span.current-time', player).text($.prop(this, 'currentTime'));
-            //         }).bind('timeupdate', getSetCurrentTime.get).bind('emptied', function () {
-            //             $('input.time-slider', player).prop('disabled', true);
-            //             $('span.duration', player).text('--');
-            //             $('span.current-time', player).text(0);
-            //             $('span.network-state', player).text(0);
-            //             $('span.ready-state', player).text(0);
-            //             $('span.paused-state', player).text($.prop(this, 'paused'));
-            //             $('span.height-width', player).text('-/-');
-            //             $('span.progress', player).text('0');
-            //         }).bind('waiting playing loadedmetadata updateMediaState', function () {
-            //             $('span.network-state', player).text($.prop(this, 'networkState'));
-            //             $('span.ready-state', player).text($.prop(this, 'readyState'));
-            //         }).bind('play pause', function () {
-            //             $('span.paused-state', player).text($.prop(this, 'paused'));
-            //         }).bind('volumechange', function () {
-            //             var muted = $.prop(this, 'muted');
-            //             $('span.muted-state', player).text(muted);
-            //             $('input.muted', player).prop('checked', muted);
-            //             $('span.volume', player).text($.prop(this, 'volume'));
-            //         }).bind('volumechange', getSetVolume.get).bind('play pause', function () {
-            //             $('span.paused-state', player).text($.prop(this, 'paused'));
-            //         }).bind('loadedmetadata updateMediaState', function () {
-            //             $('span.height-width', player).text($.prop(this, 'videoWidth') + '/' + $.prop(this, 'videoHeight'));
-            //         }).each(function () {
-            //             if ($.prop(this, 'readyState') > $.prop(this, 'HAVE_NOTHING')) {
-            //                 $(this).triggerHandler('updateMediaState');
-            //             }
-            //         });
-
-            //         $('input.time-slider', player).bind('input', getSetCurrentTime.set).prop('value', 0);
-            //         $('input.volume-slider', player).bind('input', getSetVolume.set);
-
-            //         $('input.play', player).bind('click', function () {
-            //             $('video, audio', player)[0].play();
-            //         });
-            //         $('input.pause', player).bind('click', function () {
-            //             $('video, audio', player)[0].pause();
-            //         });
-            //         $('input.muted', player).bind('click updatemuted', function () {
-            //             $('video, audio', player).prop('muted', $.prop(this, 'checked'));
-            //         }).triggerHandler('updatemuted');
-            //         $('input.controls', player).bind('click', function () {
-            //             $('video, audio', player).prop('controls', $.prop(this, 'checked'));
-            //         }).prop('checked', true);
-
-            //         $('select.load-media', player).bind('change', function () {
-            //             var srces = $('option:selected', this).data('src');
-            //             if (srces) {
-            //                 //the following code can be also replaced by the following line
-            //                 //$('video, audio', player).loadMediaSrc(srces).play();
-            //                 $('video, audio', player).removeAttr('src').find('source').remove().end().each(function () {
-            //                     var mediaElement = this;
-            //                     if (typeof srces == 'string') {
-            //                         srces = [srces];
-            //                     }
-            //                     $.each(srces, function (i, src) {
-
-            //                         if (typeof src == 'string') {
-            //                             src = {
-            //                                 src: src
-            //                             };
-            //                         }
-            //                         $(document.createElement('source')).attr(src).appendTo(mediaElement);
-            //                     });
-            //                 })[0].load();
-            //                 $('video, audio', player)[0].play();
-            //             }
-            //         }).prop('selectedIndex', 0);
-            //     });
-            // });
-
-            //helper for createing throttled get/set functions (good to create time/volume-slider, which are used as getter and setter)
-
-            // function createGetSetHandler(get, set) {
-            //     var throttleTimer;
-            //     var blockedTimer;
-            //     var blocked;
-            //     return {
-            //         get: function () {
-            //             if (blocked) {
-            //                 return;
-            //             }
-            //             return get.apply(this, arguments);
-            //         },
-            //         set: function () {
-            //             clearTimeout(throttleTimer);
-            //             clearTimeout(blockedTimer);
-
-            //             var that = this;
-            //             var args = arguments;
-            //             blocked = true;
-            //             throttleTimer = setTimeout(function () {
-            //                 set.apply(that, args);
-            //                 blockedTimer = setTimeout(function () {
-            //                     blocked = false;
-            //                 }, 30);
-            //             }, 0);
-            //         }
-            //     };
-            // };
-
-            // function getActiveTimeRange(range, time) {
-            //     var len = range.length;
-            //     var index = -1;
-            //     var start = 0;
-            //     var end = 0;
-            //     for (var i = 0; i < len; i++) {
-            //         if (time >= (start = range.start(i)) && time <= (end = range.end(i))) {
-            //             index = i;
-            //             break;
-            //         }
-            //     }
-            //     return [index, start, end];
-            // };
 
         //video controls
         var movie = document.getElementById('promo_video');
