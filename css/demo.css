@@ -412,11 +412,16 @@ img.mg-t-1 {
 .thin-11em {
 	width: 11em;
 }
-section#video {
+/* Button visible on non-white background */
+.videoContainer {
+	background: #000;		/* Black */
+}
+/* Akshat: HTML for this does not seem to exist in index.html */
+/*section#video {
 	background: #fff;
 	background-size: cover;
 	background-attachment: fixed;
-}
+}*/
 section#faq {
 	background: #fff;
 	background-size: cover;
