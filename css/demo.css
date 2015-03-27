@@ -503,8 +503,8 @@ section.sponsors {
 }
 
 .sponsors .senior a {
-	height: 6rem;
-	width: 50%;
+	height: 8rem;
+	width: 33%;
 }
 
 section#sponsor-logos {
@@ -512,13 +512,13 @@ section#sponsor-logos {
 }
 
 .sponsors .junior a {
-	height: 5.5rem;
+	height: 5rem;
 	width: 33%;
 }
 
 .sponsors .freshman a {
 	height: 3.6rem;
-	width: 25%;
+	width: 33%;
 }
 
 .sponsors .sophomore a, .sponsors .masters a, .sponsors .masters-2 a, .sponsors .senior a, .sponsors .junior a, .sponsors .freshman a {
