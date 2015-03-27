@@ -400,7 +400,15 @@ p.ref {
 /* =========================================================================
                            Sponsor Logo Layout
    =======================================================================*/
-
+img.fb-w {
+	width: 5em;
+}
+a.col-md-offset-3.rollover { /* automatic */
+	height: 4em !important;
+}
+img.mg-t-1 {
+	margin-top: 1em;
+}
 .thin-11em {
 	width: 11em;
 }
@@ -512,7 +520,7 @@ section#sponsor-logos {
 }
 
 .sponsors .junior a {
-	height: 5rem;
+	height: 2em;
 	width: 33%;
 }
 
