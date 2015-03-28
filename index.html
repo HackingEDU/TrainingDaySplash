@@ -35,6 +35,9 @@
         <!-- Fonts -->
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+        <!-- SlickNav jquery mobile menu plugin -->
+        <link rel="stylesheet" type="text/css" href="./css/slicknav.css" />
+
         <!-- iphone5/5s boostrap <p> padding fix -->
         <style>
             @media only screen
@@ -52,9 +55,29 @@
     </head>
 
     <body>
+        <header>
+          <nav class="main-nav">
+            <ul class="special">
+              <li><a href="#top" id="home_link">HOME</a></li>
+              <li><a href="#about" id="about_link">ABOUT</a></li>
+              <li><a href="#promo_video" id="video_link">PROMO</a></li>
+              <li><a href="#faq" id="faq_link">FAQ</a></li>
+              <li><a href="#sponsors" id="sponsors_link">SPONSORS</a></li>
+            <ul>
+          </nav>
+          <nav class="main-mobile-nav">
+            <ul id="mobile-menu">
+              <li><a class="scroll" href="#top" id="home_link">HOME</a></li>
+              <li><a class="scroll" href="#about" id="about_link">ABOUT</a></li>
+              <li><a class="scroll" href="#promo_video" id="video_link">PROMO</a></li>
+              <li><a class="scroll" href="#faq" id="faq_link">FAQ</a></li>
+              <li><a class="scroll" href="#sponsors" id="sponsors_link">SPONSORS</a></li>
+            </ul>
+          </nav>
+        </header>
 
         <!-- first section -->
-        <div class="demo-3a">
+        <div class="demo-3a" id="top">
             <div class="content">
                 <div id="large-header" class="large-header">
                     <canvas id="demo-canvas"></canvas>
@@ -111,7 +134,7 @@
         <!-- =========================================================================
                                    General Info
              ===================================================================== -->
-        <div class="container codrops-header">
+        <div class="container codrops-header" id="about">
             <div class="col-md-4">
               <h1>What</h1><br>
               <p><span class="special">HackingEDU Training Day is a pre-hackathon event full of workshops and hands-on-training. For an entire day, mentors and tech guides will give talks on various technologies and work with students to help them master the tools they will need to take their skills to the next level.</span></p>
@@ -393,6 +416,7 @@
         <script src="js/rAF.js"></script>
         <script src="js/demo-3a.js"></script>
         <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
         <!-- AddThisEvent -->
         <script type="text/javascript" src="https://addthisevent.com/libs/1.5.8/ate.min.js"></script>
 
@@ -408,6 +432,97 @@
 
 </script>
         <script>
+        //nav bar scroll 
+          var navBar = $('.main-nav');
+          var navTop = navBar.offset().top;
+          var currentTop = 0;
+          var lastTop = 0;
+          var lastVisited = '';
+          var isMobile = $('.main-nav').css('display') === 'none' ? true : false;
+
+          $('#mobile-menu').slicknav({duplicate: false});
+          $('.slicknav_btn').css('float', 'left');
+          $('.slicknav_menu').css({'display': 'none', 'z-index': 2});
+          if (isMobile) {
+            $('.slicknav_menu').css('display', 'block');
+          }
+
+          //(use mobile menu icon at < 750px width)
+          $(window).resize(function() {
+            if (!isMobile && $(window).width() <= 750) {
+              $('.main-nav').css('display', 'none');
+              $('.main-mobile-nav').css('display', 'block');
+              $('.slicknav_menu').css('display', 'block');
+              isMobile = true;
+
+            } else if (isMobile && $(window).width() > 750) {
+              $('.slicknav_menu').css('display', 'none');
+              $('.main-mobile-nav').css('display', 'none');
+              $('.main-nav').css('display', 'block');
+              isMobile = false;
+            }
+          });
+
+          $('#home_link').html('<b><i>HOME</i></b>');
+
+          var defaultNav = {
+            home_link: {text: 'HOME', id: '#home_link'},
+            about_link: {text: 'ABOUT', id: '#about_link'},
+            video_link: {text: 'PROMO', id: '#video_link'},
+            faq_link: {text: 'FAQ', id: '#faq_link'},
+            sponsors_link: {text: 'SPONSORS', id: '#sponsors_link'}
+          };
+
+          $(window).scroll(function() {
+            currentTop = $(window).scrollTop();
+
+            //controls fade in/out of navbar
+            if (!isMobile && navBar.css('display') !== 'none' && currentTop - lastTop > 0) {
+              navBar.fadeOut(300);
+            } else if (!isMobile && navBar.css('display') === 'none' && currentTop - lastTop < 0) {
+              navBar.fadeIn(300);
+            } else if (isMobile && $('.slicknav_menu').css('display') === 'none' && currentTop - lastTop < 0) {
+              $('.slicknav_menu').fadeIn(300);
+            } else if (isMobile && $('.slicknav_menu').css('display') !== 'none' && currentTop - lastTop > 0) {
+              $('.slicknav_menu').fadeOut(300);
+            }
+
+            lastTop = currentTop;
+
+            //makes navbar sticky
+            if (currentTop !== navTop) {
+              navBar.css({position: 'fixed', top: 0});
+              $('.slicknav_menu').css({position: 'fixed', top: 0});
+              navTop = navBar.offset().top;
+            }
+
+            //makes navbar menu items bold when visited
+            if (currentTop >= $('#top').offset().top && 
+              currentTop < $('#about').offset().top) {
+              $(lastVisited.id).html(lastVisited.text);
+              $('#home_link').html('<b><i>HOME</i></b>');
+              lastVisited = defaultNav.home_link;
+            } else if (currentTop >= $('#about').offset().top && 
+              currentTop < $('#promo_video').offset().top) {
+                $(lastVisited.id).html(lastVisited.text);
+                $('#about_link').html('<b><i>ABOUT</i></b>');
+                lastVisited = defaultNav.about_link;
+            } else if (currentTop >= $('#promo_video').offset().top && 
+              currentTop < $('#faq').offset().top) {
+                $(lastVisited.id).html(lastVisited.text);
+                $('#video_link').html('<b><i>PROMO</i></b>');
+                lastVisited = defaultNav.video_link;
+            } else if (currentTop >= $('#faq').offset().top && 
+              currentTop < $('#sponsors').offset().top) {
+                $(lastVisited.id).html(lastVisited.text);
+                $('#faq_link').html('<b><i>FAQ</i></b>');
+                lastVisited = defaultNav.faq_link;
+            } else if (currentTop >= $('#sponsors').offset().top) {
+                $(lastVisited.id).html(lastVisited.text);
+                $('#sponsors_link').html('<b><i>SPONSORS</i></b>');
+                lastVisited = defaultNav.sponsors_link;
+            }
+          });
 
         //video controls
         var movie = document.getElementById('promo_video');

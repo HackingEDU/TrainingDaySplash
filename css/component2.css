@@ -9,6 +9,46 @@
 	z-index: 1;
 }
 
+/*nav bar*/
+.main-nav {
+	width: 100%;
+	background-color: black;
+	z-index: 2;
+}
+
+.main-nav a {
+	color: white;
+}
+
+.main-nav li {
+	color: white;
+	display: inline;
+	padding: 15px;
+}
+
+.main-nav ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+    height: auto;
+	white-space: nowrap;
+}
+
+.main-mobile-nav {
+	display: none;
+}
+
+@media screen and (max-width: 750px) {
+	.main-nav {
+		display: none;
+	}
+
+	.main-mobile-nav {
+		display: block;
+	}
+}
+
 /* =========================================================================
                                  Video Section
    =======================================================================*/

@@ -312,7 +312,7 @@ a.pure-button-primary {
     position: absolute;
     right: 1em;
     top: 1em;
-    z-index: 1;
+    z-index: 2;
 }
 
 a { /* BOOTSTRAP OVERWRITE */
