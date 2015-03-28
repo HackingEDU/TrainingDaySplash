@@ -57,21 +57,21 @@
     <body>
         <header>
           <nav class="main-nav">
-            <ul class="special">
-              <li><a href="#top" id="home_link">HOME</a></li>
-              <li><a href="#about" id="about_link">ABOUT</a></li>
-              <li><a href="#promo_video" id="video_link">PROMO</a></li>
-              <li><a href="#faq" id="faq_link">FAQ</a></li>
-              <li><a href="#sponsors" id="sponsors_link">SPONSORS</a></li>
+            <ul>
+              <li><a href="#top" id="home_link">H O M E</a></li>
+              <li><a href="#about" id="about_link">A B O U T</a></li>
+              <li><a href="#promo_video" id="video_link">P R O M O</a></li>
+              <li><a href="#faq" id="faq_link">F A Q</a></li>
+              <li><a href="#sponsors" id="sponsors_link">S P O N S O R S</a></li>
             <ul>
           </nav>
           <nav class="main-mobile-nav">
             <ul id="mobile-menu">
-              <li><a class="scroll" href="#top" id="home_link">HOME</a></li>
-              <li><a class="scroll" href="#about" id="about_link">ABOUT</a></li>
-              <li><a class="scroll" href="#promo_video" id="video_link">PROMO</a></li>
-              <li><a class="scroll" href="#faq" id="faq_link">FAQ</a></li>
-              <li><a class="scroll" href="#sponsors" id="sponsors_link">SPONSORS</a></li>
+              <li><a class="scroll" href="#top">HOME</a></li>
+              <li><a class="scroll" href="#about">ABOUT</a></li>
+              <li><a class="scroll" href="#promo_video">PROMO</a></li>
+              <li><a class="scroll" href="#faq">FAQ</a></li>
+              <li><a class="scroll" href="#sponsors">SPONSORS</a></li>
             </ul>
           </nav>
         </header>
@@ -438,14 +438,31 @@
           var currentTop = 0;
           var lastTop = 0;
           var lastVisited = '';
+          var mobileMenuClicked = false;
           var isMobile = $('.main-nav').css('display') === 'none' ? true : false;
 
-          $('#mobile-menu').slicknav({duplicate: false});
-          $('.slicknav_btn').css('float', 'left');
-          $('.slicknav_menu').css({'display': 'none', 'z-index': 2});
-          if (isMobile) {
-            $('.slicknav_menu').css('display', 'block');
-          }
+          $('#mobile-menu').slicknav({
+            duplicate: false,
+            closeOnClick: true
+          });
+
+          $('#mobile-menu').init(function() {
+            $('.slicknav_btn').css('float', 'left');
+            $('.slicknav_menu').css({'display': 'none', 'z-index': 2, 'top': 0, 'position': 'fixed', 'background': 'transparent'});
+            if (isMobile) {
+              $('.slicknav_menu').css('display', 'block');
+            }
+
+            $('.slicknav_menu .slicknav_btn').click(function() {
+              if (mobileMenuClicked) {
+                $('.slicknav_menu').css('background', 'transparent');
+                mobileMenuClicked = false;
+              } else {
+                $('.slicknav_menu').css('background', 'black');
+                mobileMenuClicked = true;
+              }
+            });
+          });
 
           //(use mobile menu icon at < 750px width)
           $(window).resize(function() {
@@ -463,14 +480,12 @@
             }
           });
 
-          $('#home_link').html('<b><i>HOME</i></b>');
-
           var defaultNav = {
-            home_link: {text: 'HOME', id: '#home_link'},
-            about_link: {text: 'ABOUT', id: '#about_link'},
-            video_link: {text: 'PROMO', id: '#video_link'},
-            faq_link: {text: 'FAQ', id: '#faq_link'},
-            sponsors_link: {text: 'SPONSORS', id: '#sponsors_link'}
+            home_link: {text: 'H O M E', id: '#home_link'},
+            about_link: {text: 'A B O U T', id: '#about_link'},
+            video_link: {text: 'P R O M O', id: '#video_link'},
+            faq_link: {text: 'F A Q', id: '#faq_link'},
+            sponsors_link: {text: 'S P O N S O R S', id: '#sponsors_link'}
           };
 
           $(window).scroll(function() {
@@ -500,26 +515,31 @@
             if (currentTop >= $('#top').offset().top && 
               currentTop < $('#about').offset().top) {
               $(lastVisited.id).html(lastVisited.text);
-              $('#home_link').html('<b><i>HOME</i></b>');
+              navBar.css('background-color', '#000000');
+              $('#home_link').html('<b>> H O M E</b>');
               lastVisited = defaultNav.home_link;
             } else if (currentTop >= $('#about').offset().top && 
               currentTop < $('#promo_video').offset().top) {
                 $(lastVisited.id).html(lastVisited.text);
-                $('#about_link').html('<b><i>ABOUT</i></b>');
+                $('#about_link').html('<b>> A B O U T</b>');
+                navBar.css('background-color', '#2896D7');
                 lastVisited = defaultNav.about_link;
             } else if (currentTop >= $('#promo_video').offset().top && 
               currentTop < $('#faq').offset().top) {
                 $(lastVisited.id).html(lastVisited.text);
-                $('#video_link').html('<b><i>PROMO</i></b>');
+                $('#video_link').html('<b>> P R O M O</b>');
+                navBar.css('background-color', '#000000');
                 lastVisited = defaultNav.video_link;
             } else if (currentTop >= $('#faq').offset().top && 
               currentTop < $('#sponsors').offset().top) {
                 $(lastVisited.id).html(lastVisited.text);
-                $('#faq_link').html('<b><i>FAQ</i></b>');
+                $('#faq_link').html('<b>> F A Q</b>');
+                navBar.css('background-color', '#2896D7');
                 lastVisited = defaultNav.faq_link;
             } else if (currentTop >= $('#sponsors').offset().top) {
                 $(lastVisited.id).html(lastVisited.text);
-                $('#sponsors_link').html('<b><i>SPONSORS</i></b>');
+                $('#sponsors_link').html('<b>> S P O N S O R S</b>');
+                navBar.css('background-color', '#000000');
                 lastVisited = defaultNav.sponsors_link;
             }
           });

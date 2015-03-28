@@ -12,12 +12,17 @@
 /*nav bar*/
 .main-nav {
 	width: 100%;
-	background-color: black;
+	background-color: #000000;
 	z-index: 2;
 }
 
 .main-nav a {
 	color: white;
+	font-size: 1.15em;
+}
+
+.main-nav a:hover {
+	font-size: 1.25em;
 }
 
 .main-nav li {
