@@ -414,7 +414,7 @@ img.mg-t-1 {
 }
 /* Button visible on non-white background */
 .videoContainer {
-	background: #000;		/* Black */
+	background: black;		/* #000 doesn't seem to work */
 }
 /* Akshat: HTML for this does not seem to exist in index.html */
 /*section#video {
