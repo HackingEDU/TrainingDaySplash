@@ -516,31 +516,37 @@
             if (currentTop >= $('#top').offset().top && 
               currentTop < $('#about').offset().top) {
               $(lastVisited.id).html(lastVisited.text);
-              navBar.css('background-color', '#000000');
+              $(lastVisited.id).css('background', '#000000');
+              $('#home_link').css('background', '#2896D7');
               $('#home_link').html('<b>> H O M E</b>');
               lastVisited = defaultNav.home_link;
             } else if (currentTop >= $('#about').offset().top && 
               currentTop < $('#promo_video').offset().top) {
                 $(lastVisited.id).html(lastVisited.text);
+                $(lastVisited.id).css('background', '#000000');
+                $('#about_link').css('background', '#2896D7');
                 $('#about_link').html('<b>> A B O U T</b>');
-                navBar.css('background-color', '#2896D7');
                 lastVisited = defaultNav.about_link;
             } else if (currentTop >= $('#promo_video').offset().top && 
               currentTop < $('#faq').offset().top) {
                 $(lastVisited.id).html(lastVisited.text);
+                $(lastVisited.id).css('background', '#000000');
+                $('#video_link').css('background', '#2896D7');
                 $('#video_link').html('<b>> P R O M O</b>');
-                navBar.css('background-color', '#000000');
                 lastVisited = defaultNav.video_link;
             } else if (currentTop >= $('#faq').offset().top && 
               currentTop < $('#sponsors').offset().top) {
                 $(lastVisited.id).html(lastVisited.text);
+                $(lastVisited.id).css('background', '#000000');
+                $('#faq_link').css('background', '#2896D7');
                 $('#faq_link').html('<b>> F A Q</b>');
-                navBar.css('background-color', '#2896D7');
+                navBar.css('background-color', '');
                 lastVisited = defaultNav.faq_link;
             } else if (currentTop >= $('#sponsors').offset().top) {
                 $(lastVisited.id).html(lastVisited.text);
+                $(lastVisited.id).css('background', '#000000');
+                $('#sponsors_link').css('background', '#2896D7');
                 $('#sponsors_link').html('<b>> S P O N S O R S</b>');
-                navBar.css('background-color', '#000000');
                 lastVisited = defaultNav.sponsors_link;
             }
           });
