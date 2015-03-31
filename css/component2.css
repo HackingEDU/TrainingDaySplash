@@ -17,20 +17,15 @@
 	padding: 1em 1em;
 }
 
-.main-nav a {
+.main-nav ul a {
 	color: white;
 	font-size: 1.15em;
 	padding: 1em 1.5em;
 }
 
-.main-nav a:hover {
-	background: #2896D7;
-}
-
 .main-nav li {
 	color: white;
 	display: inline;
-	padding: 15px;
 }
 
 .main-nav ul {
