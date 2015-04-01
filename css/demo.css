@@ -729,7 +729,10 @@ a.edu {
 	top: 1em;
 	z-index: 1;
 }
-
+/* Display all links inside social block in a stack, NOT A ROW */
+.social-block a {
+	display: block;
+}
 a { /* BOOTSTRAP OVERWRITE */
 	color: black;
 	text-decoration: none;
