@@ -1,3 +1,10 @@
+/* =========================================================================
+                           ALL TAGS STYLING (PLEASE KEEP THIS AT THE TOP!)
+   =======================================================================*/
+a { /* BOOTSTRAP OVERWRITE */
+	color: black;
+	text-decoration: none;
+}
 
 /* =========================================================================
                            CSS Framework Helpers
@@ -730,8 +737,5 @@ a.edu {
 /* Display all links inside social block in a stack, NOT A ROW */
 .social-block a {
 	display: block;
-}
-a { /* BOOTSTRAP OVERWRITE */
-	color: black;
-	text-decoration: none;
+	color: white;		/* Override all-tag styling for <a> */
 }
