@@ -427,11 +427,19 @@ img.mg-t-1 {
 	background-size: cover;
 	background-attachment: fixed;
 }*/
-section#faq {
+div#events {
 	background: #fff;
 	background-size: cover;
 	background-attachment: fixed;
-  padding: 4em 2em;
+	padding: 4em 2em;
+}
+section#faq {
+	background: #000;
+	background-size: cover;
+	width: 100%;			/* Akshat: Hacky fix to cover white colored body space surrounding section */
+	background-attachment: fixed;
+  	padding: 4em 2em;
+  	color: white;
 }
 section#sponsors {
 	background: url('../img/Paypal Hq.jpg');
