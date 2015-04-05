@@ -434,12 +434,13 @@ div#events {
 	padding: 4em 2em;
 }
 section#faq {
-	background: #000;
+	background: #FFF;
 	background-size: cover;
 	width: 100%;			/* Akshat: Hacky fix to cover white colored body space surrounding section */
 	background-attachment: fixed;
   	padding: 4em 2em;
-  	color: white;
+  	
+	color: black;
 }
 section#sponsors {
 	background: url('../img/Paypal Hq.jpg');
