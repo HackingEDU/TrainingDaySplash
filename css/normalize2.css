@@ -425,3 +425,258 @@ td,
 th {
   padding: 0;
 }
+
+
+
+
+
+  .scheduleSection .schedule{
+    width: 80%;
+    max-width: 600px;
+    margin:auto;
+  }
+
+  .scheduleSection .scheduleEvent{
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .scheduleSection .scheduleEvent .col1{
+    width: 60%;
+    display: inline-block;
+  }
+
+  .scheduleSection .scheduleEvent .col2{
+    width: 35%;
+    display: inline-block;
+    text-align: right;
+  }
+
+  .scheduleSection .scheduleEvent p{
+    font-family: Lato;
+    font-size: 16px;
+    width: 100%;
+  }
+ }
+
+@media only screen and (max-width: 768px) {
+  .aboutSection {
+    background-size: auto 100%; }
+
+  .faqSection .row {
+    width: 80%;
+    clear: both;
+    margin: auto; }
+  .faqSection .col {
+    width: 100%;
+    float: none;
+    margin-top: 40px; }
+    .faqSection .col p {
+      text-align: left;
+      width: 100%; }
+    .faqSection .col h2 {
+      width: 100%; }
+
+  .sponsors-container div figure {
+    width: 100%;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+  .sponsors-container div {
+    width: 100%;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+  .platinum div {
+    width: 80%;
+    margin: auto;
+    display: inline-block; }
+
+  .gold div {
+    width: 30%;
+    margin: auto;
+    display: inline-block;
+    margin-right: 20px; }
+
+  .gold div figure {
+    height: 60px; }
+
+  .silver div {
+    width: 30%;
+    margin: auto;
+    display: inline-block;
+    margin-right: 20px; }
+
+  .silver div figure {
+    height: 50px; }
+
+  .bronze div {
+    width: 30%;
+    margin: auto;
+    display: inline-block;
+    margin-right: 20px; }
+
+  .bronze div figure {
+    height: 40px; }
+
+    .judgesSection .col{
+      width: 45%;
+    }
+
+ }
+
+@media only screen and (max-width: 460px) {
+  h1.special {
+    font-size: 3em; }
+
+  .prizesSection .col-small{
+    width: 90%;
+  }
+
+  .prizesSection .col{
+    width: 90%;
+  }
+
+  .infoSection .col{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    display: inline-table;
+  }
+
+  .infoSection p{
+    text-align: justify;
+  }
+
+  .nav {
+    text-align: center;
+    padding: 10px 0px; }
+    .nav .home {
+      display: none; }
+    .nav .links {
+      text-align: center;
+      font-size: 12px; }
+    .nav a {
+      padding: 10px 10px; }
+
+  .aboutSection {
+    min-height: 100%; }
+    .aboutSection .logo .image {
+      width: 100%;
+      text-align: center; }
+    .aboutSection .logo img {
+      position: relative;
+      display: inline-block;
+      width: 80%;
+      max-width: 200px;
+      margin-top: auto; }
+
+  .sponsorsSection .by > a > img {
+    max-height: auto;
+    max-width: 80%; }
+
+    .judgesSection .col{
+      width: 90%;
+    }
+ }
+
+/* Schedule */
+  
+.scheduleSection {
+/*  background: url('http://www.rohittigga.com/img/newbackground.png') center center;
+*/}
+
+.scheduleFootnote {
+  text-align: center;
+  width: 100%;
+}
+
+.scheduleSection .schedule{
+  width: 80%;
+  max-width: 450px;
+  margin:auto;
+}
+
+.scheduleSection .scheduleEvent{
+  padding: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.scheduleSection .scheduleEvent .col1{
+  width: 60%;
+  display: inline-block;
+}
+
+.scheduleSection .scheduleEvent .col2{
+  width: 35%;
+  display: inline-block;
+  text-align: right;
+}
+
+.scheduleSection .scheduleEvent p{
+  font-family: Lato;
+  font-size: 16px;
+  width: 100%;
+}
+/*
+ * Live
+ */
+
+.counter {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.aboutSection.live {
+  padding-top: 10px;
+  padding-bottom: 10px;
+} 
+  .aboutSection.live .logo h1 {
+    padding-top: 0px;
+  }
+
+@media only screen and (max-width: 768px) {
+  .aboutSection.live {
+    padding-top: 30px;
+  } 
+  .scheduleSection .schedule{
+    width: 90%;
+    max-width: 600px;
+    margin:auto;
+  }
+
+  .scheduleSection .scheduleEvent{
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .scheduleSection .scheduleEvent .col1{
+    width: 50%;
+    display: inline-block;
+  }
+
+  .scheduleSection .scheduleEvent .col2{
+    width: 45%;
+    display: inline-block;
+    text-align: right;
+  }
+
+  .scheduleSection .scheduleEvent h4{
+    font-family: Ubuntu;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .scheduleSection h1{
+    font-family: Ubuntu;
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .scheduleSection .scheduleEvent p{
+    font-family: Lato;
+    font-size: 12px;
+    width: 100%;
+  }
+}
