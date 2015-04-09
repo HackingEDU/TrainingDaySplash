@@ -663,7 +663,7 @@ th {
   }
 
   .scheduleSection .scheduleEvent h4{
-    font-family: Ubuntu;
+    font-family: sans-serif;
     font-size: 14px;
     width: 100%;
     font-weight: bold;
@@ -671,12 +671,12 @@ th {
 
 
 .italicshift{
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 
   .scheduleSection h1{
-    font-family: Ubuntu;
+    font-family: sans-serif;
     font-size: 28px;
     width: 100%;
   }
