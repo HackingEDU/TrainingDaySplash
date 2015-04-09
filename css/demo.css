@@ -11,8 +11,10 @@ a {
     margin-top: 0;
 }
 
+
 .m-t-3em {
     margin-top: 3em;
+
 }
 
 .m-b-none {
@@ -513,11 +515,11 @@ section.sponsors {
     filter: none;
 }
 
-.sponsors .sophomore,
+.sponsors .partner,
 .sponsors .masters,
-.sponsors .masters-2,
 .sponsors .senior,
 .sponsors .junior,
+.sponsors .sophomore,
 .sponsors .freshman {
     display: inline-block;
     margin-top: 1rem;
@@ -535,22 +537,22 @@ section.sponsors {
     width: 100%;
 }
 
-.sponsors .masters-2 a {
+.sponsors .senior a {
     height: 20rem;
     width: 50%;
 }
 
-.sponsors .sophomore a {
+.sponsors .partner a {
     height: 10rem;
     width: 33%;
 }
 
-.sponsors .sophomore>.pearlhacks {
+.sponsors .partner>.pearlhacks {
     height: 20rem;
     margin-top: -5rem;
 }
 
-.sponsors .senior a {
+.sponsors .junior a {
     height: 8rem;
     width: 33%;
 }
@@ -559,7 +561,7 @@ section#sponsor-logos {
     border-radius: .18em;
 }
 
-.sponsors .junior a {
+.sponsors .sophomore a {
     height: 2em;
     width: 33%;
 }
@@ -569,11 +571,11 @@ section#sponsor-logos {
     width: 33%;
 }
 
-.sponsors .sophomore a,
+.sponsors .partner a,
 .sponsors .masters a,
-.sponsors .masters-2 a,
 .sponsors .senior a,
 .sponsors .junior a,
+.sponsors .sophomore a,
 .sponsors .freshman a {
     position: relative;
 }
@@ -601,11 +603,11 @@ section#sponsor-logos {
         padding: 0;
         max-width: 100%;
     }
-    .sponsors .sophomore,
+    .sponsors .partner,
     .sponsors .masters,
-    .sponsors .masters-2,
     .sponsors .senior,
     .sponsors .junior,
+    .sponsors .sophomore,
     .sponsors .freshman {
         display: inline-block;
         margin-top: 1rem;
@@ -619,7 +621,7 @@ section#sponsor-logos {
         height: 11rem;
         width: 100%;
     }
-    .sponsors .masters-2 a {
+    .sponsors .senior a {
         height: 20rem;
         width: 100%;
     }
@@ -627,22 +629,22 @@ section#sponsor-logos {
         height: 15rem;
         width: 90%;
     }
-    .sponsors .sophomore a {
+    .sponsors .partner a {
         height: 10rem;
         width: 100%;
     }
-    .sponsors .sophomore>.pearlhacks {
+    .sponsors .partner>.pearlhacks {
         height: 20rem;
         margin-top: 0px;
     }
-    .sponsors .senior a {
+    .sponsors .junior a {
         height: 6rem;
         width: 100%;
     }
     .sponsors .partner a.ubc {
         width: 16%;
     }
-    .sponsors .junior a {
+    .sponsors .sophomore a {
         height: 5.5rem;
         width: 100%;
     }
@@ -650,11 +652,11 @@ section#sponsor-logos {
         height: 3.6rem;
         width: 25%;
     }
-    .sponsors .sophomore a,
+    .sponsors .partner a,
     .sponsors .masters a,
-    .sponsors .masters-2 a,
     .sponsors .senior a,
     .sponsors .junior a,
+    .sponsors .sophomore a,
     .sponsors .freshman a {
         position: relative;
     }
