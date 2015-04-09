@@ -57,6 +57,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/slicknav.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
     <style>
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
         p {
@@ -70,7 +71,7 @@
 </head>
 
 <body>
-    <header style="display: none">
+    <!-- <header>
         <nav class="main-nav">
             <ul>
                 <li><a href="#top" id="home_link">H O M E</a></li>
@@ -80,7 +81,20 @@
                 <li><a href="#sponsors" id="sponsors_link">S P O N S O R S</a></li>
                 <ul>
         </nav>
-        <nav class="main-mobile-nav">
+
+    </header> -->
+    <div id="header" class="header">
+        <nav id="nav">
+            <ul class="nav navbar-nav">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#promo_video">Promo</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+            </ul>
+        </nav>
+        <!-- <nav class="main-mobile-nav">
             <ul id="mobile-menu">
                 <li><a class="scroll" href="#top">HOME</a></li>
                 <li><a class="scroll" href="#about">ABOUT</a></li>
@@ -88,9 +102,9 @@
                 <li><a class="scroll" href="#faq">FAQ</a></li>
                 <li><a class="scroll" href="#sponsors">SPONSORS</a></li>
             </ul>
-        </nav>
-    </header>
-    <div class="demo-3a" id="top">
+        </nav> -->
+    </div>
+    <div class="demo-3a scrollto" id="top">
         <div class="content">
             <div id="large-header" class="large-header">
                 <canvas id="demo-canvas"></canvas>
@@ -115,7 +129,7 @@
             <a href="/cdn-cgi/l/email-protection#d1a5b4b0bc91b9b0b2bab8bfb6b4b5a4ffb2be" target="rss" style="color:#fff"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
         </div>
     </div>
-    <div class="container codrops-header" id="about">
+    <div class="container codrops-header scrollto" id="about">
         <div class="col-md-4">
             <h1>What</h1>
             <br>
@@ -132,14 +146,14 @@
             <p><span class="special"><a target="rss" href="https://www.google.com/maps/place/PayPal/@37.376984,-121.922703,18z/data=!3m1!4b1!4m2!3m1!1s0x808fcbe88aee163b:0xd6064b10b2260381">Paypal Town Hall<br>2161 N 1st St<br>San Jose, CA</a><br><br>Can't make it? Watch the recordings later!</span></p>
         </div>
     </div>
-    <div class="videoContainer">
+    <div class="videoContainer scrollto" id="promo">
         <a href="">
             <video id="promo_video" controls>
                 <source src="./img/HackingEDU_promo_extended.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
         </a>
     </div>
-    <section class="sponsorsSection fluid-container scheduleSection">
+    <section class="sponsorsSection fluid-container scheduleSection scrollto" id="schedule">
         <div class="container">
             <h1 class="general">Schedule</h1>
             <b>  <p class="footnote scheduleFootnote">Workshops by: IBM, PayPal, Pebble, Makeschool, Twilio, Socket.io, Twitter Bootstrap, Draper University, Firebase & GunDB</p></b>
@@ -269,7 +283,7 @@
         <em>  <p class="footnote scheduleFootnote">*Schedule is subject to change</p></em>
         </div>
     </section>
-    <section id="faq" class="container">
+    <section id="faq" class="container scrollto">
         <em> <hr> </em>
         <h1>FAQ</h1>
         <a id="hacker_faq_link" class="mob-txt-enlrg" style="color:blue;" href="">Hacker FAQ</a> | <a id="sponsor_faq_link" class="mob-txt-enlrg" style="color:blue;" href="">Sponsor FAQ</a> </a>
@@ -313,7 +327,7 @@
             </div>
         </div>
     </section>
-    <section id="sponsors">
+    <section id="sponsors" class="scrollto">
         <section class="content-frame">
             <section id="sponsor-logos" class="sponsors">
                 <h2 style="padding-top:5vh">Sponsors</h2>
@@ -353,10 +367,12 @@
     <script src="js/TweenLite.min.js"></script>
     <script src="js/EasePack.min.js"></script>
     <script src="js/rAF.js"></script>
-    <script src="js/demo-3a.js"></script>
+    <script src="js/demo.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
+    <!-- <script src="js/jquery.slicknav.min.js"></script> -->
     <script type="text/javascript" src="https://addthisevent.com/libs/1.5.8/ate.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="//cdn.jsdelivr.net/stickynavbar.js/1.1.2/jquery.stickyNavbar.min.js"></script>
     <script>
     (function() {
         var qs, js, q, s, d = document,
@@ -401,13 +417,13 @@
     </script>
     <script>
     //nav bar scroll
-    var navBar = $('.main-nav');
+    var navBar = $('.header');
     var navTop = navBar.offset().top;
     var currentTop = 0;
     var lastTop = 0;
     var lastVisited = '';
     var mobileMenuClicked = false;
-    var isMobile = $('.main-nav').css('display') === 'none' ? true : false;
+    var isMobile = $('.header').css('display') === 'none' ? true : false;
 
     // navBar.append($('.social-block'));
 
@@ -447,7 +463,7 @@
     //(use mobile menu icon at < 750px width)
     $(window).resize(function() {
         if (!isMobile && $(window).width() <= 750) {
-            $('.main-nav').css('display', 'none');
+            $('.header').css('display', 'none');
             $('.main-mobile-nav').css('display', 'block');
             $('.slicknav_menu').css('display', 'block');
             isMobile = true;
@@ -455,107 +471,107 @@
         } else if (isMobile && $(window).width() > 750) {
             $('.slicknav_menu').css('display', 'none');
             $('.main-mobile-nav').css('display', 'none');
-            $('.main-nav').css('display', 'block');
+            $('.header').css('display', 'block');
             isMobile = false;
         }
     });
 
-    var defaultNav = {
-        home_link: {
-            text: 'H O M E',
-            id: '#home_link'
-        },
-        about_link: {
-            text: 'A B O U T',
-            id: '#about_link'
-        },
-        video_link: {
-            text: 'P R O M O',
-            id: '#video_link'
-        },
-        faq_link: {
-            text: 'F A Q',
-            id: '#faq_link'
-        },
-        sponsors_link: {
-            text: 'S P O N S O R S',
-            id: '#sponsors_link'
-        }
-    };
+    // var defaultNav = {
+    //     home_link: {
+    //         text: 'H O M E',
+    //         id: '#home_link'
+    //     },
+    //     about_link: {
+    //         text: 'A B O U T',
+    //         id: '#about_link'
+    //     },
+    //     video_link: {
+    //         text: 'P R O M O',
+    //         id: '#video_link'
+    //     },
+    //     faq_link: {
+    //         text: 'F A Q',
+    //         id: '#faq_link'
+    //     },
+    //     sponsors_link: {
+    //         text: 'S P O N S O R S',
+    //         id: '#sponsors_link'
+    //     }
+    // };
 
-    $(window).scroll(function() {
-        // currentTop = $(window).scrollTop();
+    // $(window).scroll(function() {
+    //     // currentTop = $(window).scrollTop();
 
-        //controls fade in/out of navbar
-        if (!isMobile && navBar.css('display') !== 'none' && currentTop - lastTop > 0) {
-            navBar.fadeOut(300);
-        } else if (!isMobile && navBar.css('display') === 'none' && currentTop - lastTop < 0) {
-            navBar.fadeIn(300);
-        } else if (isMobile && $('.slicknav_menu').css('display') === 'none' && currentTop - lastTop < 0) {
-            $('.slicknav_menu').fadeIn(300);
-        } else if (isMobile && $('.slicknav_menu').css('display') !== 'none' && currentTop - lastTop > 0) {
-            $('.slicknav_menu').fadeOut(300);
-        }
+    //     //controls fade in/out of navbar
+    //     if (!isMobile && navBar.css('display') !== 'none' && currentTop - lastTop > 0) {
+    //         navBar.fadeOut(300);
+    //     } else if (!isMobile && navBar.css('display') === 'none' && currentTop - lastTop < 0) {
+    //         navBar.fadeIn(300);
+    //     } else if (isMobile && $('.slicknav_menu').css('display') === 'none' && currentTop - lastTop < 0) {
+    //         $('.slicknav_menu').fadeIn(300);
+    //     } else if (isMobile && $('.slicknav_menu').css('display') !== 'none' && currentTop - lastTop > 0) {
+    //         $('.slicknav_menu').fadeOut(300);
+    //     }
 
-        lastTop = currentTop;
+    //     lastTop = currentTop;
 
-        //makes navbar sticky
-        if (currentTop !== navTop) {
-            navBar.css({
-                position: 'fixed',
-                top: 0
-            });
-            $('.slicknav_menu').css({
-                position: 'fixed',
-                top: 0
-            });
-            // $('.social-block').css({position: 'fixed', top: 0});
-            navTop = navBar.offset().top;
-        }
-        // show it anyway
-        $('.social-block').css({
-            position: 'fixed',
-            top: 0
-        });
+    //     //makes navbar sticky
+    //     if (currentTop !== navTop) {
+    //         navBar.css({
+    //             position: 'fixed',
+    //             top: 0
+    //         });
+    //         $('.slicknav_menu').css({
+    //             position: 'fixed',
+    //             top: 0
+    //         });
+    //         // $('.social-block').css({position: 'fixed', top: 0});
+    //         navTop = navBar.offset().top;
+    //     }
+    //     // show it anyway
+    //     $('.social-block').css({
+    //         position: 'fixed',
+    //         top: 0
+    //     });
 
-        //makes navbar menu items bold when visited
-        if (currentTop >= $('#top').offset().top &&
-            currentTop < $('#about').offset().top) {
-            $(lastVisited.id).html(lastVisited.text);
-            $(lastVisited.id).css('background', '#000000');
-            $('#home_link').css('background', '#2896D7');
-            $('#home_link').html('<b>> H O M E</b>');
-            lastVisited = defaultNav.home_link;
-        } else if (currentTop >= $('#about').offset().top &&
-            currentTop < $('#promo_video').offset().top) {
-            $(lastVisited.id).html(lastVisited.text);
-            $(lastVisited.id).css('background', '#000000');
-            $('#about_link').css('background', '#2896D7');
-            $('#about_link').html('<b>> A B O U T</b>');
-            lastVisited = defaultNav.about_link;
-        } else if (currentTop >= $('#promo_video').offset().top &&
-            currentTop < $('#faq').offset().top) {
-            $(lastVisited.id).html(lastVisited.text);
-            $(lastVisited.id).css('background', '#000000');
-            $('#video_link').css('background', '#2896D7');
-            $('#video_link').html('<b>> P R O M O</b>');
-            lastVisited = defaultNav.video_link;
-        } else if (currentTop >= $('#faq').offset().top &&
-            currentTop < $('#sponsors').offset().top) {
-            $(lastVisited.id).html(lastVisited.text);
-            $(lastVisited.id).css('background', '#000000');
-            $('#faq_link').css('background', '#2896D7');
-            $('#faq_link').html('<b>> F A Q</b>');
-            navBar.css('background-color', '');
-            lastVisited = defaultNav.faq_link;
-        } else if (currentTop >= $('#sponsors').offset().top) {
-            $(lastVisited.id).html(lastVisited.text);
-            $(lastVisited.id).css('background', '#000000');
-            $('#sponsors_link').css('background', '#2896D7');
-            $('#sponsors_link').html('<b>> S P O N S O R S</b>');
-            lastVisited = defaultNav.sponsors_link;
-        }
-    });
+    //     //makes navbar menu items bold when visited
+    //     if (currentTop >= $('#top').offset().top &&
+    //         currentTop < $('#about').offset().top) {
+    //         $(lastVisited.id).html(lastVisited.text);
+    //         $(lastVisited.id).css('background', '#000000');
+    //         $('#home_link').css('background', '#2896D7');
+    //         $('#home_link').html('<b>> H O M E</b>');
+    //         lastVisited = defaultNav.home_link;
+    //     } else if (currentTop >= $('#about').offset().top &&
+    //         currentTop < $('#promo_video').offset().top) {
+    //         $(lastVisited.id).html(lastVisited.text);
+    //         $(lastVisited.id).css('background', '#000000');
+    //         $('#about_link').css('background', '#2896D7');
+    //         $('#about_link').html('<b>> A B O U T</b>');
+    //         lastVisited = defaultNav.about_link;
+    //     } else if (currentTop >= $('#promo_video').offset().top &&
+    //         currentTop < $('#faq').offset().top) {
+    //         $(lastVisited.id).html(lastVisited.text);
+    //         $(lastVisited.id).css('background', '#000000');
+    //         $('#video_link').css('background', '#2896D7');
+    //         $('#video_link').html('<b>> P R O M O</b>');
+    //         lastVisited = defaultNav.video_link;
+    //     } else if (currentTop >= $('#faq').offset().top &&
+    //         currentTop < $('#sponsors').offset().top) {
+    //         $(lastVisited.id).html(lastVisited.text);
+    //         $(lastVisited.id).css('background', '#000000');
+    //         $('#faq_link').css('background', '#2896D7');
+    //         $('#faq_link').html('<b>> F A Q</b>');
+    //         navBar.css('background-color', '');
+    //         lastVisited = defaultNav.faq_link;
+    //     } else if (currentTop >= $('#sponsors').offset().top) {
+    //         $(lastVisited.id).html(lastVisited.text);
+    //         $(lastVisited.id).css('background', '#000000');
+    //         $('#sponsors_link').css('background', '#2896D7');
+    //         $('#sponsors_link').html('<b>> S P O N S O R S</b>');
+    //         lastVisited = defaultNav.sponsors_link;
+    //     }
+    // });
 
     //video controls
     var movie = document.getElementById('promo_video');
@@ -658,6 +674,30 @@
         } catch (e) {}
     })();
     /* ]]> */
+    </script>
+
+    <!-- James is Cool -->
+    <script type="text/javascript">
+    $(function () {
+        $('.header').stickyNavbar({
+        activeClass: "active",          // Class to be added to highlight nav elements
+        sectionSelector: "scrollto",    // Class of the section that is interconnected with nav links
+        animDuration: 250,              // Duration of jQuery animation
+        startAt: 0,                     // Stick the menu at XXXpx from the top of the this() (nav container)
+        easing: "linear",               // Easing type if jqueryEffects = true, use jQuery Easing plugin to extend easing types - gsgd.co.uk/sandbox/jquery/easing
+        animateCSS: true,               // AnimateCSS effect on/off
+        animateCSSRepeat: false,        // Repeat animation everytime user scrolls
+        cssAnimation: "fadeInDown",     // AnimateCSS class that will be added to selector
+        jqueryEffects: false,           // jQuery animation on/off
+        jqueryAnim: "slideDown",        // jQuery animation type: fadeIn, show or slideDown
+        selector: "a",                  // Selector to which activeClass will be added, either "a" or "li"
+        mobile: false,                  // If false nav will not stick under 480px width of window
+        mobileWidth: 480,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
+        zindex: 9999,                   // The zindex value to apply to the element: default 9999, other option is "auto"
+        stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
+        unstickyModeClass: "unsticky"   // Class that will be applied to 'this' in non-sticky mode
+      });
+    });
     </script>
 </body>
 
