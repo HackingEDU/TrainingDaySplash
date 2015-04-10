@@ -57,12 +57,6 @@ a {
     margin-left: 6.3em;
 }
 
-section#Schedule {
-    background: url('../img/beaut1.png');
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .icon-wkshp {
     width: 2em;
 }
@@ -448,11 +442,18 @@ img.mg-t-1 {
     background: black;
 }
 
+section#schedule {
+    /*background: url('../img/beaut1.png');*/
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 4em 2em 4em 2em;
+}
+
 section#faq {
     background: #fff;
     background-size: cover;
     background-attachment: fixed;
-    padding: 4em 2em;
+    padding: 0em 2em 4em 2em;
 }
 
 section#sponsors {
@@ -771,7 +772,7 @@ a.edu {
 /** James's Sticky Navbar Styles **/
 .active {
     color: #fff !important;
-    text-decoration: underline !important;
+    font-weight: 700 !important;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);

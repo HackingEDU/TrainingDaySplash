@@ -38,9 +38,10 @@
 }
 
 #nav ul li a:hover {
-  color: #111;
+  color: #fff;
   text-decoration: none;
   background-color: none;
+  font-weight: 700;
 }
 
 #nav li.current-menu-item a {
