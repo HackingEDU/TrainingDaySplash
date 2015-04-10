@@ -259,7 +259,7 @@ body {
     font-weight: 400;
     font-size: 1em;
     line-height: 1.25;
-    font-family: 'Raleway', Calibri, Arial, sans-serif;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
 }
 
 a,
@@ -485,7 +485,7 @@ section.sponsors {
     font-weight: 700;
     font-size: 2em;
     margin-bottom: 2em;
-    font-family: lato, sans-serif;
+    font-family: "Lato", sans-serif;
     color: #57655f;
     text-align: center;
 }
@@ -686,7 +686,7 @@ a.edu {
 
 .main-btn {
     margin-top: 1em;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Lato', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
     background: rgba(0, 0, 0, 0.247059);

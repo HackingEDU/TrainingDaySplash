@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
 #header {
   width: 100%;
   padding: 20px;
@@ -7,12 +9,12 @@
   color: #fff;
   background-color: rgba(0,0,0,.3);
   border-bottom: 1px solid #adadad;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Navigation */
 #nav {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 #nav ul {
