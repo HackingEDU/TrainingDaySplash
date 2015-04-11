@@ -78,11 +78,9 @@
 
     <!--  VIDEO SECTION  -->
     <div class="videoContainer">
-        <a href="">
-            <video id="promo_video" controls>
-                <source src="./img/HackingEDU_promo_extended.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-            </video>
-        </a>
+        <video id="promo_video" controls onclick="this.play();"/>>
+            <source src="./img/HackingEDU_promo_extended.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        </video>
     </div>
 
     <!--  SCHEDULE SECTION  -->
@@ -323,7 +321,6 @@
             </section>
         </section>
     </section>
-</body>
 <script src="js/TweenLite.min.js"></script>
 <script src="js/EasePack.min.js"></script>
 <script src="js/rAF.js"></script>
@@ -381,5 +378,5 @@
 
     });
 </script>
-
+</body>
 </html>
