@@ -584,7 +584,7 @@ th {
  }
 
 /* Schedule */
-  
+
 .scheduleSection {
 /*  background: url('http://www.rohittigga.com/img/newbackground.png') center center;
 */}
@@ -603,6 +603,7 @@ th {
 .scheduleSection .scheduleEvent{
   padding: 10px;
   border-bottom: 1px solid rgba(0,0,0,0.1);
+  position: relative;
 }
 .scheduleSection .scheduleEvent .col1{
   width: 60%;
@@ -613,6 +614,22 @@ th {
   width: 35%;
   display: inline-block;
   text-align: right;
+}
+
+/* times on schedule */
+.col2.move-up {
+  position: absolute;
+  right: 1.5em;
+  top: 2.2em;
+}
+.col2.move-up-smaller {
+  position: absolute;
+  right: 1.5em;
+  top: 1.2em;
+}
+/* pull schedules left */
+.col1 {
+  margin-right: 8em;
 }
 
 .scheduleSection .scheduleEvent p{
@@ -632,7 +649,7 @@ th {
 .aboutSection.live {
   padding-top: 10px;
   padding-bottom: 10px;
-} 
+}
   .aboutSection.live .logo h1 {
     padding-top: 0px;
   }
@@ -640,7 +657,7 @@ th {
 @media only screen and (max-width: 768px) {
   .aboutSection.live {
     padding-top: 30px;
-  } 
+  }
   .scheduleSection .schedule{
     width: 90%;
     max-width: 600px;
