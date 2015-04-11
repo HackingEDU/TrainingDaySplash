@@ -78,7 +78,7 @@ video {
 	width: 8em;
 }
 .main-title > p {
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: "Lato", Verdana, Geneva, sans-serif;
 	font-size: 20px;
 }
 .main-title > p img {
@@ -93,7 +93,7 @@ video {
 }
 
 .demo-2 .main-title {
-	font-family: 'Clicker Script', cursive;
+	font-family: "Lato", sans-serif;
 	font-weight: normal;
 	font-size: 8em;
 	padding-left: 10px;

@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?james=best">
     <link rel="stylesheet" type="text/css" href="./css/normalize.css?james=best">
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
 
     <style>
         @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
@@ -28,7 +29,7 @@
 
 <body>
     <!-- MAIN PAGE SECTION  -->
-    <div class="demo-3a" id="top">
+    <div id="top" class="demo-3a scrollto">
         <div class="content">
             <div id="large-header" class="large-header">
                 <canvas id="demo-canvas"></canvas>
@@ -53,9 +54,21 @@
             <a href="/cdn-cgi/l/email-protection#d1a5b4b0bc91b9b0b2bab8bfb6b4b5a4ffb2be" target="rss" style="color:#fff"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
         </div>
     </div>
+    <div id="header" class="header">
+        <nav id="nav">
+            <ul class="nav navbar-nav">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#promo">Promo</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!--  WHAT/WHY/WHERE SECTION  -->
-    <div class="container codrops-header" id="about">
+    <div id="about" class="container codrops-header scrollto">
         <div class="col-md-4">
             <h2 style="padding-top:5vh">What</h2>
             <br>
@@ -78,14 +91,14 @@
     </div>
 
     <!--  VIDEO SECTION  -->
-    <div class="videoContainer">
+    <div id="promo" class="videoContainer scrollto">
         <video id="promo_video" controls>
             <source src="./img/HackingEDU_promo_extended.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
         </video>
     </div>
 
     <!--  SCHEDULE SECTION  -->
-    <section class="sponsorsSection fluid-container scheduleSection">
+    <section id="schedule" class="sponsorsSection fluid-container scheduleSection scrollto">
         <div class="container">
             <h2 style="padding-top:5vh">Schedule</h2>
 
@@ -222,7 +235,7 @@
     </section>
 
     <!-- FAQs SECTION   -->
-    <section id="faq" class="container">
+    <section id="faq" class="container scrollto">
         <hr>
         <h2 style="padding-top:5vh">FAQ</h2>
         <a id="hacker_faq_link" class="mob-txt-enlrg" style="color:blue;" href="">Hacker FAQ</a> | <a id="sponsor_faq_link" class="mob-txt-enlrg" style="color:blue;" href="">Sponsor FAQ</a>
@@ -266,7 +279,7 @@
     </section>
 
     <!-- SPONSORSHIP SECTION   -->
-    <section id="sponsors">
+    <section id="sponsors" class="scrollto">
         <section class="content-frame">
             <section id="sponsor-logos" class="sponsors">
                 <h2 style="padding-top:5vh">Sponsors</h2>
@@ -307,63 +320,88 @@
             </section>
         </section>
     </section>
-<script src="js/TweenLite.min.js?james=best"></script>
-<script src="js/EasePack.min.js?james=best"></script>
-<script src="js/rAF.js?james=best"></script>
-<script src="js/demo.js?james=best"></script>
-<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="js/video-controls.js?james=best"></script>
+    <script src="js/TweenLite.min.js?james=best"></script>
+    <script src="js/EasePack.min.js?james=best"></script>
+    <script src="js/rAF.js?james=best"></script>
+    <script src="js/demo.js?james=best"></script>
+    <script src="js/video-controls.js?james=best"></script>
 
-<script>
-    //used for changing faq display
-    var activeFaq = $('#hacker_faq');
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/navbar.js?james=best"></script>
 
-    $('#hacker_faq_link').click(function (e) {
-        e.preventDefault();
-        if (activeFaq.attr('id') === 'hacker_faq') {
-            return;
-        }
+    <script>
+        //used for changing faq display
+        var activeFaq = $('#hacker_faq');
 
-        activeFaq.css({
-            display: 'none'
-        });
-        activeFaq = $('#hacker_faq');
-        activeFaq.css({
-            display: 'inherit'
-        });
-    });
+        $('#hacker_faq_link').click(function (e) {
+            e.preventDefault();
+            if (activeFaq.attr('id') === 'hacker_faq') {
+                return;
+            }
 
-    $('#sponsor_faq_link').click(function (e) {
-        e.preventDefault();
-        if (activeFaq.attr('id') === 'sponsor_faq') {
-            return;
-        }
-
-        activeFaq.css({
-            display: 'none'
-        });
-        activeFaq = $('#sponsor_faq');
-        activeFaq.css({
-            display: 'inherit'
+            activeFaq.css({
+                display: 'none'
+            });
+            activeFaq = $('#hacker_faq');
+            activeFaq.css({
+                display: 'inherit'
+            });
         });
 
-    });
+        $('#sponsor_faq_link').click(function (e) {
+            e.preventDefault();
+            if (activeFaq.attr('id') === 'sponsor_faq') {
+                return;
+            }
 
-    $('#other_faq_link').click(function (e) {
-        e.preventDefault();
-        if (activeFaq.attr('id') === 'other_faq') {
-            return;
-        }
+            activeFaq.css({
+                display: 'none'
+            });
+            activeFaq = $('#sponsor_faq');
+            activeFaq.css({
+                display: 'inherit'
+            });
 
-        activeFaq.css({
-            display: 'none'
         });
-        activeFaq = $('#other_faq');
-        activeFaq.css({
-            display: 'inherit'
+
+        $('#other_faq_link').click(function (e) {
+            e.preventDefault();
+            if (activeFaq.attr('id') === 'other_faq') {
+                return;
+            }
+
+            activeFaq.css({
+                display: 'none'
+            });
+            activeFaq = $('#other_faq');
+            activeFaq.css({
+                display: 'inherit'
+            });
+
         });
 
-    });
-</script>
+        // Sticky Navbar Options
+        $(function () {
+            $('.header').stickyNavbar({
+                activeClass: "active",          // Class to be added to highlight nav elements
+                sectionSelector: "scrollto",    // Class of the section that is interconnected with nav links
+                animDuration: 250,              // Duration of jQuery animation
+                startAt: 0,                     // Stick the menu at XXXpx from the top of the this() (nav container)
+                easing: "linear",               // Easing type if jqueryEffects = true, use jQuery Easing plugin to extend easing types - gsgd.co.uk/sandbox/jquery/easing
+                animateCSS: true,               // AnimateCSS effect on/off
+                animateCSSRepeat: false,        // Repeat animation everytime user scrolls
+                cssAnimation: "fadeInDown",     // AnimateCSS class that will be added to selector
+                jqueryEffects: false,           // jQuery animation on/off
+                jqueryAnim: "slideDown",        // jQuery animation type: fadeIn, show or slideDown
+                selector: "a",                  // Selector to which activeClass will be added, either "a" or "li"
+                mobile: false,                  // If false nav will not stick under 480px width of window
+                mobileWidth: 768,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
+                zindex: 9999,                   // The zindex value to apply to the element: default 9999, other option is "auto"
+                stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
+                unstickyModeClass: "unsticky"   // Class that will be applied to 'this' in non-sticky mode
+            });
+        });
+    </script>
 </body>
 </html>

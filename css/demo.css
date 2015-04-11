@@ -51,11 +51,93 @@ a { /* BOOTSTRAP OVERWRITE */
 }
 
 /* =========================================================================
+                             Sticky Navbar
+   =======================================================================*/
+#header .active {
+    color: #fff !important;
+    font-weight: 700 !important;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#header {
+  width: 100%;
+  padding: 20px;
+  top: 0;
+  z-index: 5;
+  line-height: 10px;
+  color: #fff;
+  background-color: rgba(0,0,0,.3);
+  border-bottom: 1px solid #adadad;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Navigation */
+#nav {
+  font-size: 1.2em;
+}
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+#nav li {
+  margin-right: 0;
+  display: inline;
+}
+
+#nav ul li a {
+  text-decoration: none;
+  margin: 0px;
+  padding: 10px 15px 0px 15px;
+  color: #eee;
+  background-color: transparent;
+}
+
+#nav ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: none;
+	font-weight: 700;
+}
+
+#nav li.current-menu-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#nav li.current_page_item {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#nav nav>li>a:focus, #nav .nav>li>a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* Justified Alignment*/
+@media (min-width: 768px){
+    #nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+    }
+}
+
+/* =========================================================================
                            Schedule Section
    =======================================================================*/
 
-section#Schedule {
-  background: url('../img/beaut1.png');
+section#schedule {
+  /*background: url('../img/beaut1.png');*/
   background-size: cover;
   background-attachment: fixed;
 }
@@ -228,7 +310,7 @@ body {
 	font-weight: 400;
 	font-size: 1em;
 	line-height: 1.25;
-	font-family: 'Raleway', Calibri, Arial, sans-serif;
+	font-family: "Lato", Calibri, Arial, sans-serif;
 }
 
 a, button {
@@ -471,7 +553,7 @@ section.sponsors {
 	font-weight: 700;
 	font-size: 2em;
 	margin-bottom: 2em;
-	font-family: lato, sans-serif;
+	font-family: "Lato", sans-serif;
 	color: #57655f;
 	text-align:center;
 }
