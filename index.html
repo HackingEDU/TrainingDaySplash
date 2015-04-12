@@ -28,6 +28,30 @@
 </head>
 
 <body>
+    <!-- NAVIGATION BAR -->
+    <nav id="header" class="header navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#promo">Promo</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- MAIN PAGE SECTION  -->
     <div id="top" class="demo-3a scrollto">
         <div class="content">
@@ -53,18 +77,6 @@
             <a href="https://instagram.com/hackingedusf" target="rss" style="color:#fff"><i id="social" class="fa fa-instagram fa-3x social-ig"></i></a>
             <a href="/cdn-cgi/l/email-protection#d1a5b4b0bc91b9b0b2bab8bfb6b4b5a4ffb2be" target="rss" style="color:#fff"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
         </div>
-    </div>
-    <div id="header" class="header">
-        <nav id="nav">
-            <ul class="nav navbar-nav">
-                <li><a href="#top">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#promo">Promo</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#sponsors">Sponsors</a></li>
-            </ul>
-        </nav>
     </div>
 
     <!--  WHAT/WHY/WHERE SECTION  -->
@@ -320,14 +332,19 @@
             </section>
         </section>
     </section>
-    <script src="js/TweenLite.min.js?james=best"></script>
-    <script src="js/EasePack.min.js?james=best"></script>
-    <script src="js/rAF.js?james=best"></script>
-    <script src="js/demo.js?james=best"></script>
-    <script src="js/video-controls.js?james=best"></script>
 
+    <!-- Imported scripts -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- Main section animation -->
+    <script src="js/TweenLite.min.js?james=best"></script>
+    <script src="js/EasePack.min.js?james=best"></script>
+    <script src="js/demo.js?james=best"></script>
+
+    <!-- Custom scripts -->
+    <script src="js/video-controls.js?james=best"></script>
     <script src="js/navbar.js?james=best"></script>
 
     <script>
@@ -395,7 +412,7 @@
                 jqueryEffects: false,           // jQuery animation on/off
                 jqueryAnim: "slideDown",        // jQuery animation type: fadeIn, show or slideDown
                 selector: "a",                  // Selector to which activeClass will be added, either "a" or "li"
-                mobile: false,                  // If false nav will not stick under 480px width of window
+                mobile: true,                   // If false nav will not stick under 768px width of window
                 mobileWidth: 768,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
                 zindex: 9999,                   // The zindex value to apply to the element: default 9999, other option is "auto"
                 stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
