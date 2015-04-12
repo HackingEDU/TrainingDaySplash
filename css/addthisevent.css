@@ -1,0 +1,23 @@
+/* AddThisEvent theme CSS
+---------------------------------------------------------------------- */
+
+/* General */
+.addthisevent 							{visibility:hidden;}
+.addthisevent span 						{display:none!important;}
+.addthisevent .data 					{display:none!important;}
+
+/* The button */
+.addthisevent-drop 						{width:170px;display:inline-block;position:relative;text-align:center;z-index:999998;background:#2878eb;cursor:pointer;font-family:Roboto,"Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;color:#fff!important;font-size:15px;font-weight:300;text-decoration:none;padding:12px 20px 12px 15px;}
+.addthisevent-drop:hover 				{color:#fff;font-size:15px;text-decoration:none;background-color:#2c84f4;}
+.addthisevent-drop:active 				{top:1px;}
+.addthisevent-drop .arrow 				{width:15px;height:10px;position:absolute;top:50%;right:15px;margin-top:-5px;background:url(../img/icon-arrow-t1.png) no-repeat;}
+.addthisevent-selected 					{background-color:#2c84f4;}
+
+/* The drop down */
+.addthisevent_dropdown 					{width:215px;position:absolute;z-index:99999;padding:6px 0px 0px 0px;background:#fff;text-align:left;display:none;margin-top:2px;margin-left:-1px;border-top:1px solid #c8c8c8;border-right:1px solid #bebebe;border-bottom:1px solid #a8a8a8;border-left:1px solid #bebebe;-webkit-box-shadow:1px 3px 6px rgba(0,0,0,0.15);-moz-box-shadow:1px 3px 6px rgba(0,0,0,0.15);box-shadow:1px 3px 6px rgba(0,0,0,0.15);}
+.addthisevent_dropdown span 			{display:block;line-height:110%;background:#fff;text-decoration:none;font-size:14px;color:#6d84b4;padding:8px 10px 9px 15px;}
+.addthisevent_dropdown span:hover 		{background:#f4f4f4;color:#6d84b4;text-decoration:none;font-size:14px;}
+.addthisevent_dropdown .copyx 			{height:21px;display:block;position:relative;cursor:default;}
+.addthisevent_dropdown .brx 			{height:1px;overflow:hidden;background:#e0e0e0;position:absolute;z-index:100;left:10px;right:10px;top:9px;}
+.addthisevent_dropdown .frs 			{position:absolute;top:5px;cursor:pointer;right:10px;padding-left:10px;font-style:normal;font-weight:normal;text-align:right;z-index:101;line-height:110%;background:#fff;text-decoration:none;font-size:9px;color:#cacaca;}
+.addthisevent_dropdown .frs:hover 		{color:#6d84b4;}
