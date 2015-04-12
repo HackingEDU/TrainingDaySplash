@@ -6,6 +6,12 @@ a { /* BOOTSTRAP OVERWRITE */
 	text-decoration: none;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+	p {
+		margin: 0px 20px 10px;
+	}
+}
+
 /* =========================================================================
                            CSS Framework Helpers
    =======================================================================*/
@@ -822,9 +828,19 @@ a.edu {
     border: 2px solid #fff;
 }
 
+.rwd-line {
+	display: inline;
+}
+
 @media (max-width: 991px) {
 	.btn-1, .btn-2 {
 		margin-left: 0;
+	}
+	.rwd-line {
+		display: block;
+	}
+	.hide-on-mobile {
+		display: none;
 	}
 }
 
