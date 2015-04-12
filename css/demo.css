@@ -16,9 +16,6 @@ a { /* BOOTSTRAP OVERWRITE */
 .m-t-none {
     margin-top: 0;
 }
-.m-t-3em {
-    margin-top: 3em;
-}
 .m-b-none {
     margin-bottom: 0;
 }
@@ -36,6 +33,9 @@ a { /* BOOTSTRAP OVERWRITE */
 }
 .m-t-4em {
 	margin-top: 4em;
+}
+.m-t-3em {
+    margin-top: 3em;
 }
 .m-t-2em {
 	margin-top: 2em;
