@@ -592,6 +592,12 @@ section.sponsors {
 	text-align:center;
 }
 
+@media (max-width: 768px) {
+	section.sponsors h2 {
+		font-size: 40px;
+	}
+}
+
 .sponsors a {
 	height: 4rem;
 	float: left;
