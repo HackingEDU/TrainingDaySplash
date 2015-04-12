@@ -423,7 +423,7 @@
 
         // Hides navbar on selecting an item
         $('.nav a').on('click', function(){
-            $(".navbar-toggle").click()
+            $(".navbar-collapse").collapse('hide');
         });
         // Hides navbar on click outside the navbar
         $('body').bind('click', function(e) {
