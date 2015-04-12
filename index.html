@@ -420,6 +420,21 @@
                 unstickyModeClass: "unsticky"   // Class that will be applied to 'this' in non-sticky mode
             });
         });
+
+        // Hides navbar on selecting an item
+        $('.nav a').on('click', function(){
+            $(".navbar-toggle").click()
+        });
+        // Hides navbar on click outside the navbar
+        $('body').bind('click', function(e) {
+            if($(e.target).closest('.navbar').length == 0) {
+                // click happened outside of .navbar, so hide
+                var opened = $('.navbar-collapse').hasClass('collapse in');
+                if ( opened === true ) {
+                    $('.navbar-collapse').collapse('hide');
+                }
+            }
+        });
     </script>
 </body>
 </html>
