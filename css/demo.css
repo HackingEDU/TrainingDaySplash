@@ -161,6 +161,7 @@ a { /* BOOTSTRAP OVERWRITE */
 				border: none;
 		}
 		#navbar ul li a {
+				text-align: left;
 				line-height: 2em;
 		}
 }
