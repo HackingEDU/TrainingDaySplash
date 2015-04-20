@@ -1,0 +1,114 @@
+/*
+	Stylesheet for OptinSkin; ID: 1.
+	Generated: April 15, 2015, 4:31 pm
+*/
+/* From original stylesheet
+ 	 at http://optinskin.com/src-4/design16/style.css */
+.ois-16-inner {
+	border-style:solid;
+}
+
+ul.ois-16-list {
+  text-align: left;
+  padding-left: 25px;
+  margin-left: 0;
+}
+
+ul.ois-16-list li {
+  font-size: 16px;
+  text-align: left;
+  list-style: disc;
+  font-weight: bold;
+}
+
+img.ois-16-img {
+  max-height: none; 
+  max-width: none; 
+}
+/* End original stylesheet */
+/* Generated from custom design options */
+#ois-1 .ois-16-button, #ois-1 input[type='submit'].ois-16-button {
+	background-color: #089e00 !important;
+	border-color: #089e00 !important;
+	border-width: 1px !important;
+	font-size: 16px !important;
+	font-family: 'Helvetica', Helvetica, sans-serif !important;
+	height: 40px !important;
+	margin-top: 10px !important;
+	border-radius: 0px !important;
+	color: #ffffff !important;
+	font-weight: 400 !important;
+	width: 215px !important;
+}
+#ois-1 .ois-16-email-input {
+	padding-bottom: 4px !important;
+	padding-left: 5px !important;
+	padding-right: 2px !important;
+	padding-top: 4px !important;
+	text-align: left !important;
+	width: 215px !important;
+	border-radius: 5px !important;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+#ois-1 .ois-16-Name-input {
+	padding-bottom: 4px !important;
+}
+#ois-1 .ois-16-name-input {
+	padding-left: 5px !important;
+	padding-right: 2px !important;
+	padding-top: 4px !important;
+	text-align: left !important;
+	width: 215px !important;
+	border-radius: 5px !important;
+	margin-top: 10px !important;
+	margin-bottom: 0px !important;
+}
+#ois-1 .ois-16-subtitle {
+	text-align: center !important;
+	color: #2c3e50 !important;
+	font-size: 20px !important;
+	font-family: 'Helvetica', Helvetica, sans-serif !important;
+	font-weight: 400 !important;
+	line-height: 22px !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+	margin-top: 20px !important;
+	margin-bottom: 10px !important;
+}
+#ois-1 .ois-16-title {
+	text-align: center !important;
+	color: #2c3e50 !important;
+	font-size: 24px !important;
+	font-style: normal !important;
+	font-family: 'Helvetica', Helvetica, sans-serif !important;
+	line-height: 28px !important;
+	font-weight: 700 !important;
+	margin-top: 10px !important;
+	margin-bottom: 35px !important;
+}
+#ois-1 .ois-16-inner {
+	border-color: #999999 !important;
+	border-width: 2px !important;
+	background-color: #ffffff !important;
+	border-radius: 4px !important;
+	padding-bottom: 10px !important;
+	padding-top: 10px !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+#ois-1 .ois-16-outer {
+	width: 500px !important;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+#ois-1 .ois-16-form {
+	text-align: center !important;
+}
+#ois-1 .ois-16-img {
+	margin-top: 0px !important;
+}
+/* End custom style */
+/* End of file */
