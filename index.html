@@ -10,19 +10,30 @@
     <meta property="og:image" content="http://hackingedu.co/img/hacklogo-prism.png" />
 
     <link rel="shortcut icon" href="../favicon.ico?james=best">
-    <link rel="stylesheet" type="text/css" href="./css/demo.css?v=5">
-    <link rel="stylesheet" type="text/css" href="./css/component.css?v=1">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?james=best">
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css?james=best">
-    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="./css/demo.css?v=15">
 
-    <style>
-        @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-            p { margin: 0px 20px 10px; }
-        }
-    </style>
+    <script src="https://addthisevent.com/libs/ate-latest.min.js"></script>
+    <script>
+        // Settings for calendar integration
+        addthisevent.settings({
+			license    : "replace-with-your-licensekey",
+            mouse      : false,
+			css        : false,
+			outlook    : {show:true, text:"Outlook Calendar"},
+			google     : {show:true, text:"Google Calendar"},
+			yahoo      : {show:true, text:"Yahoo Calendar"},
+			outlookcom : {show:true, text:"Outlook.com"},
+			appleical  : {show:true, text:"Apple iCalendar"},
+            facebook   : {show:true, text:"Facebook Event"},
+			dropdown   : {order:"appleical,google,facebook,outlook,outlookcom,yahoo"}
+		});
+    </script>
 </head>
 
 <body>
@@ -69,41 +80,57 @@
             </div>
         </div>
         <div class="social-block">
-            <a href="https://www.facebook.com/hackingedusf" target="rss" style="color:#fff"><i id="social" class="fa fa-facebook-square fa-3x social-fb"></i></a>
-            <a href="https://twitter.com/hackingedusf" target="rss" style="color:#fff"><i id="social" class="fa fa-twitter-square fa-3x social-tw"></i></a>
-            <a href="https://instagram.com/hackingedusf" target="rss" style="color:#fff"><i id="social" class="fa fa-instagram fa-3x social-ig"></i></a>
-            <a href="/cdn-cgi/l/email-protection#d1a5b4b0bc91b9b0b2bab8bfb6b4b5a4ffb2be" target="rss" style="color:#fff"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
+            <a href="https://www.facebook.com/hackingedusf" target="rss"><i id="social" class="fa fa-facebook-square fa-3x social-fb"></i></a>
+            <a href="https://twitter.com/hackingedusf" target="rss"><i id="social" class="fa fa-twitter-square fa-3x social-tw"></i></a>
+            <a href="https://instagram.com/hackingedusf" target="rss"><i id="social" class="fa fa-instagram fa-3x social-ig"></i></a>
+            <a href="/cdn-cgi/l/email-protection#d1a5b4b0bc91b9b0b2bab8bfb6b4b5a4ffb2be" target="rss"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
         </div>
     </div>
 
     <!--  WHAT/WHY/WHERE SECTION  -->
     <div id="about" class="container codrops-header scrollto">
         <div class="col-md-4">
-            <h2 style="padding-top:5vh">What</h2>
+            <h2>What</h2>
             <br>
             <p><span class="special">HackingEDU Training Day is a pre-hackathon event full of workshops and hands-on-training. For an entire day, mentors and tech guides will give talks on various technologies and work with students to help them master the tools they will need to take their skills to the next level.</span>
             </p>
         </div>
         <div class="col-md-4">
-            <h2 style="padding-top:5vh">Why</h2>
+            <h2>Why</h2>
             <br>
             <p><span class="special">Want to learn a new API, language or framework? Have a specific question or issue? Come to Training Day and learn from the best! Attendees are guaranteed admission to the main Hackathon in October and access to view the talks and recordings, so sign up today!</span>
             </p>
         </div>
         <div class="col-md-4">
-            <h2 style="padding-top:5vh">Where</h2>
+            <h2>Where</h2>
             <br>
-            <p><span class="special"><a target="rss" href="http://bit.ly/1DDoi7I">Paypal Town Hall
-            2161 N 1st St<br>San Jose, CA</a><br><br>Can't make it? Watch the recordings later!</span>
-            </p>
+            <div title="Add to Calendar" class="addthisevent" data-track="_gaq.push(['_trackEvent','AddThisEvent','click','ate-calendar'])">
+		    Add to Calendar
+		    <span class="arrow">&nbsp;</span>
+		    <span class="start">04/25/2015 12:00 PM</span>
+		    <span class="end">04/25/2015 08:00 PM</span>
+		    <span class="timezone">America/Los_Angeles</span>
+		    <span class="title">HackingEDU Training Day</span>
+		    <span class="description">HackingEDU Training Day is a pre-hackathon event full of workshops and hands-on-training. For an entire day, mentors and tech guides will give talks on various technologies and work with students to help them master the tools they will need to take their skills to the next level.</span>
+		    <span class="location">Paypal Town Hall, 2161 N 1st St, San Jose, CA 95131</span>
+		    <span class="organizer">HackingEDU</span>
+		    <span class="organizer_email">team@hackingedu.co</span>
+                <span class="facebook_event">https://www.facebook.com/events/361191184065041</span>
+		    <span class="all_day_event">false</span>
+		    <span class="date_format">MM/DD/YYYY</span>
+                <span class="alarm_reminder">60</span>
+		</div>
+            <br><br>
+            <p class="text-center"><span class="special">
+                <a target="rss" href="http://bit.ly/1DDoi7I">Paypal Town Hall<br>2161 N 1st St<br>San Jose, CA 95131</a>
+                <br><br>Can't make it? Watch the recordings later!
+            </span></p>
         </div>
     </div>
 
     <!--  VIDEO SECTION  -->
     <div id="promo" class="videoContainer scrollto">
-        <video id="promo_video" controls>
-            <source src="./img/HackingEDU_promo_extended.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        </video>
+       <iframe id="video_iframe" width="100%" height="100%" src="https://www.youtube.com/embed/pBwJFrJcV-A" frameborder="0" rel="0"allowfullscreen></iframe>
     </div>
 
     <!--  SCHEDULE SECTION  -->
@@ -151,7 +178,7 @@
     <!--  SCHEDULE SECTION  -->
     <section id="schedule" class="sponsorsSection fluid-container scheduleSection scrollto">
         <div class="container">
-            <h2 style="padding-top:5vh">Schedule</h2>
+            <h2>Schedule</h2>
 
             <div class="schedule">
                 <div class="scheduleEvent">
@@ -185,16 +212,16 @@
                 <div class="scheduleEvent">
                     <div class="col1">
                         <h3>Workshops: Round 1</h3>
-                        <h4>IBM: <span style="font-weight: 400;">Simplified App Development in the Cloud</span></h4>
+                        <h4>IBM: <span class="light-medium">Simplified App Development in the Cloud</span></h4>
                         <p><i class="italicshift">Fireside A & B</i>
                         </p>
-                        <h4>Pebble: <span style="font-weight: 400;">It's Time for Pebble Development</span></h4>
+                        <h4>Pebble: <span class="light-medium">It's Time for Pebble Development</span></h4>
                         <p><i class="italicshift">Fireside C & D</i>
                         </p>
-                        <h4>Twillio: <span style="font-weight: 400;">Making Phones Ring with the Twilio API</span></h4>
+                        <h4>Twillio: <span class="light-medium">Making Phones Ring with the Twilio API</span></h4>
                         <p><i class="italicshift">Round Room</i>
                         </p>
-                        <h4>GunDB: <span style="font-weight: 400;">Data without Database Pains</span></h4>
+                        <h4>GunDB: <span class="light-medium">Data without Database Pains</span></h4>
                         <p><i class="italicshift">Parley Room</i>
                         </p>
                     </div>
@@ -205,13 +232,13 @@
                 <div class="scheduleEvent">
                     <div class="col1">
                         <h3>Workshops: Round 2</h3>
-                        <h4>Chegg: <span style="font-weight: 400;">Web Capture the Flag</span></h4>
+                        <h4>Chegg: <span class="light-medium">Web Capture the Flag</span></h4>
                         <p><i class="italicshift">Fireside A & B</i>
                         </p>
-                        <h4>Paypal: <span style="font-weight: 400;">Angular.js</span></h4>
+                        <h4>Paypal: <span class="light-medium">Angular.js</span></h4>
                         <p><i class="italicshift">Fireside C & D</i>
                         </p>
-                        <h4>Make School: <span style="font-weight: 400;">Build Flappy Bird in an Hour</span></h4>
+                        <h4>Make School: <span class="light-medium">Build Flappy Bird in an Hour</span></h4>
                         <p><i class="italicshift">Round Room</i>
                         </p>
                         <h4>Firebase: Realtime in Moments</h4>
@@ -225,16 +252,16 @@
                 <div class="scheduleEvent">
                     <div class="col1">
                         <h3>Workshops: Round 3</h3>
-                        <h4>Twist: <span style="font-weight: 400;">BioJS</span></h4>
+                        <h4>Twist: <span class="light-medium">BioJS</span></h4>
                         <p><i class="italicshift">Fireside A & B</i>
                         </p>
-                        <h4>Paypal: <span style="font-weight: 400;">Node.js</span></h4>
+                        <h4>Paypal: <span class="light-medium">Node.js</span></h4>
                         <p><i class="italicshift">Fireside C & D</i>
                         </p>
                         <h4>Socket.io & Twitter Bootstrap</h4>
                         <p><i class="italicshift">Round Room</i>
                         </p>
-                        <h4>Draper University: <span style="font-weight: 400;">You Only Got One Minute To Save The World</span></h4>
+                        <h4>Draper University: <span class="light-medium">You Only Got One Minute To Save The World</span></h4>
                         <p><i class="italicshift">Parley Room</i>
                         </p>
                     </div>
@@ -245,7 +272,7 @@
                 <div class="scheduleEvent">
                     <div class="col1">
                         <h3>Startup Founder Talks</h3>
-                        <h4><span style="font-weight: 300;">Socket.io & Twitter Bootstrap</span></h4>
+                        <h4><span class="lighter-medium">Socket.io & Twitter Bootstrap</span></h4>
                         <p><i class="italicshift">Town Square</i>
                         </p>
                     </div>
@@ -288,9 +315,9 @@
     <!-- FAQs SECTION   -->
     <section id="faq" class="container scrollto">
         <hr>
-        <h2 style="padding-top:5vh">FAQ</h2>
-        <a id="hacker_faq_link" class="mob-txt-enlrg" style="color:blue;" href="">Hacker FAQ</a> | <a id="sponsor_faq_link" class="mob-txt-enlrg" style="color:blue;" href="">Sponsor FAQ</a>
-        <!-- SLOPPY  </a> -->
+        <h2>FAQ</h2>
+        <a id="hacker_faq_link" class="mob-txt-enlrg blue semibold" href="">Hacker FAQ
+        </a> | <a id="sponsor_faq_link" class="mob-txt-enlrg blue semibold" href="">Sponsor FAQ</a>
         <div class="m-t-2em m-b-2em">
             <div id="hacker_faq">
                 <div class="col-lg-3">
@@ -299,7 +326,7 @@
                 </div>
                 <div class="col-lg-3">
                     <h3>How do I get there?</h3>
-                    <p class="mob-txt-enlrg">We will have shuttles available from UC Davis, UC Berkeley and San Francisco. There is also ample parking if you want to drive, and you can also take Caltrain/Public Transportation.<a target="rss" href="http://bit.ly/1DDoi7I">Directions to Training Day</a>
+                    <p class="mob-txt-enlrg">We will have shuttles available from UC Davis and UC Berkeley. There is also ample parking if you want to drive, and you can also take Caltrain/Public Transportation.<br><br><a target="rss" href="http://bit.ly/1DDoi7I">Directions to Training Day</a>
                     </p>
                 </div>
                 <div class="col-lg-3">
@@ -333,7 +360,7 @@
     <section id="sponsors" class="scrollto">
         <section class="content-frame">
             <section id="sponsor-logos" class="sponsors">
-                <h2 style="padding-top:5vh">Sponsors</h2>
+                <h2>Sponsors</h2>
                 <div class="masters">
                     <a href="http://chegg.com" class="rollover"><img src="img/sponsors/chegg.png"></a>
                     </a>
@@ -383,97 +410,9 @@
     <script src="js/demo.js?james=best"></script>
 
     <!-- Custom scripts -->
+    <script src="js/navbar.js?v=1"></script>
     <script src="js/typeform.js?v=1"></script>
-    <script src="js/video-controls.js?james=best"></script>
-    <script src="js/navbar.js?james=best"></script>
-
-    <script>
-        //used for changing faq display
-        var activeFaq = $('#hacker_faq');
-
-        $('#hacker_faq_link').click(function (e) {
-            e.preventDefault();
-            if (activeFaq.attr('id') === 'hacker_faq') {
-                return;
-            }
-
-            activeFaq.css({
-                display: 'none'
-            });
-            activeFaq = $('#hacker_faq');
-            activeFaq.css({
-                display: 'inherit'
-            });
-        });
-
-        $('#sponsor_faq_link').click(function (e) {
-            e.preventDefault();
-            if (activeFaq.attr('id') === 'sponsor_faq') {
-                return;
-            }
-
-            activeFaq.css({
-                display: 'none'
-            });
-            activeFaq = $('#sponsor_faq');
-            activeFaq.css({
-                display: 'inherit'
-            });
-
-        });
-
-        $('#other_faq_link').click(function (e) {
-            e.preventDefault();
-            if (activeFaq.attr('id') === 'other_faq') {
-                return;
-            }
-
-            activeFaq.css({
-                display: 'none'
-            });
-            activeFaq = $('#other_faq');
-            activeFaq.css({
-                display: 'inherit'
-            });
-
-        });
-
-        // Sticky Navbar Options
-        $(function () {
-            $('.header').stickyNavbar({
-                activeClass: "active",          // Class to be added to highlight nav elements
-                sectionSelector: "scrollto",    // Class of the section that is interconnected with nav links
-                animDuration: 250,              // Duration of jQuery animation
-                startAt: 0,                     // Stick the menu at XXXpx from the top of the this() (nav container)
-                easing: "linear",               // Easing type if jqueryEffects = true, use jQuery Easing plugin to extend easing types - gsgd.co.uk/sandbox/jquery/easing
-                animateCSS: true,               // AnimateCSS effect on/off
-                animateCSSRepeat: false,        // Repeat animation everytime user scrolls
-                cssAnimation: "fadeInDown",     // AnimateCSS class that will be added to selector
-                jqueryEffects: false,           // jQuery animation on/off
-                jqueryAnim: "slideDown",        // jQuery animation type: fadeIn, show or slideDown
-                selector: "a",                  // Selector to which activeClass will be added, either "a" or "li"
-                mobile: true,                   // If false nav will not stick under 768px width of window
-                mobileWidth: 768,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
-                zindex: 9999,                   // The zindex value to apply to the element: default 9999, other option is "auto"
-                stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
-                unstickyModeClass: "unsticky"   // Class that will be applied to 'this' in non-sticky mode
-            });
-        });
-
-        // Hides navbar on selecting an item
-        $('.nav a').on('click', function(){
-            $(".navbar-collapse").collapse('hide');
-        });
-        // Hides navbar on click outside the navbar
-        $('body').bind('click', function(e) {
-            if($(e.target).closest('.navbar').length == 0) {
-                // click happened outside of .navbar, so hide
-                var opened = $('.navbar-collapse').hasClass('collapse in');
-                if ( opened === true ) {
-                    $('.navbar-collapse').collapse('hide');
-                }
-            }
-        });
-    </script>
+    <script src="js/video-controls.js?james=best&lee=bestest"></script>
+    <script src="js/faq.js?v=1"></script>
 </body>
 </html>

@@ -1,14 +1,10 @@
-var v = document.getElementById('promo_video');
+var video = document.getElementById('video_iframe');
+var ratio = 560 / 310;
+video.style.width = window.innerWidth;
+video.style.height = (window.innerWidth/ratio).toString() + 'px';
 
-v.volume = 0.5;
-
-v.addEventListener('click',function(){
-    if (v.paused == false) {
-        v.pause();
-        v.firstChild.nodeValue = 'Play';
-    }
-    else {
-        v.play();
-        v.firstChild.nodeValue = 'Pause';
-    }
+window.addEventListener('resize', function(event) {
+	var width = window.innerWidth;
+	video.style.height = (width/ratio).toString() + 'px';
+	//console.log(width/video.offsetHeight);
 });
