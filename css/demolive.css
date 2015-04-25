@@ -251,6 +251,8 @@ fa { color:#fff; }
     background-size: cover;
     background-position: center center;
     z-index: 1;
+    /*height: 500px;
+    margin-top: -90px;*/
 }
 @media(max-width: 768px) {
   .large-header { max-height: 250px; }
