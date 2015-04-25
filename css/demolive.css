@@ -1076,7 +1076,11 @@ a.edu {
 }
 .scheduleSection .schedule{
     width: 100%;
+<<<<<<< HEAD
     max-width: 700px;
+=======
+    max-width: 720px;
+>>>>>>> sched redo; structure only
     margin:auto;
 }
 .scheduleSection .scheduleEvent{
