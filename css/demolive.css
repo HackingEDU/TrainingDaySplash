@@ -201,6 +201,7 @@ iframe {
     .scheduleSection .scheduleEvent p.text-thin{
         margin: 0;
     }
+
 }
 
 /* =========================================================================
@@ -1075,12 +1076,12 @@ a.edu {
     width: 100%;
 }
 .scheduleSection .schedule{
+
+    width: 80%;
+    max-width: 450px;
+
     width: 100%;
-<<<<<<< HEAD
     max-width: 700px;
-=======
-    max-width: 720px;
->>>>>>> sched redo; structure only
     margin:auto;
 }
 .scheduleSection .scheduleEvent{
