@@ -54,9 +54,14 @@ iframe {
     text-align: center !important;
 }
 .text-thin {
-    font-family: 'Proxima Nova Thin';
+    font-family: 'Proxima Nova Thin', 'Helvetica Neue', helvetica, arial, san-serif;
     font-weight: 300;
 }
+.text-bold {
+    font-family: 'Proxima Nova Thin', 'Helvetica Neue', helvetica, arial, san-serif;
+    font-weight: 700;
+}
+.blue { color: #011460; }
 /* End Formatting Type */
 /* =========================================================================
                            CSS Framework Helpers
@@ -152,7 +157,7 @@ iframe {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff !important;
 }
-#schedule h4{
+#schedule h4, #schedule p {
     margin-top: 20px !important;
     margin-bottom: 0px !important;
 }
@@ -251,8 +256,6 @@ fa { color:#fff; }
     background-size: cover;
     background-position: center center;
     z-index: 1;
-    /*height: 500px;
-    margin-top: -90px;*/
 }
 @media(max-width: 768px) {
   .large-header { max-height: 250px; }
@@ -923,7 +926,7 @@ a.edu {
 
 .scheduleSection .schedule {
     width: 100%;
-    max-width: 720px;
+    max-width: 700px;
     margin:auto;
 }
 .scheduleSection .scheduleEvent {
@@ -1073,13 +1076,8 @@ a.edu {
     width: 100%;
 }
 .scheduleSection .schedule{
-
-    width: 80%;
-    max-width: 450px;
-
     width: 100%;
-    max-width: 720px;
-
+    max-width: 700px;
     margin:auto;
 }
 .scheduleSection .scheduleEvent{
@@ -1131,8 +1129,8 @@ a.edu {
 @media only screen and (max-width: 768px) {
     .aboutSection.live { padding-top: 30px; }
     .scheduleSection .schedule {
-        width: 90%;
-        max-width: 600px;
+        width: 100%;
+        max-width: 700px;
         margin: auto;
     }
     .scheduleSection .scheduleEvent {
@@ -1148,12 +1146,8 @@ a.edu {
         display: inline-block;
         text-align: right;
     }
-    .scheduleSection .scheduleEvent h4 {
-        font-family: sans-serif;
-        font-size: 14px;
-        width: 100%;
-        font-weight: bold;
-    }
+    .scheduleSection h4 { font-size: 15px !important; }
+    .scheduleSection h4 > .text-thin { font-size: 12px !important; }
     .italicshift { margin-right: 30px; }
     .scheduleSection h1 {
         font-family: sans-serif;
@@ -1164,5 +1158,11 @@ a.edu {
         font-family: Lato;
         font-size: 12px;
         width: 100%;
+    }
+    #schedule p{
+        line-height: 16.5px;
+        height: 38px;
+        margin-top: 20px !important;
+        margin-bottom: -15px !important;
     }
 }
