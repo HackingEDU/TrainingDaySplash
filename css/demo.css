@@ -56,6 +56,49 @@ p.mob-txt-enlrg{
 .m-r-2em { margin-right: 2em; }
 .m-l-6 { margin-left: 6.3em; }
 
+
+/* the wrapper element that will become the outer circle */
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:50%;
+  bottom:0em;
+  margin-left:-5em;
+  background:#111;
+  width:10em;
+  height:10em;
+  padding:4em 2em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+  box-shadow:0px 0px 5px 0px #333;
+}
+
+/* a triangle to make the main part of the arrow. Adjust the border-color to fit your needs */
+.arrow {
+  float:left;
+  position:relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #ffffff transparent transparent transparent;
+  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+}
+
+/* a pseudo element arrow placed on top of the other one with the same color as the wrapper */
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.2em;
+  left:-3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #111 transparent transparent transparent;
+  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+}
 /* =========================================================================
                              Sticky Navbar
    =======================================================================*/
