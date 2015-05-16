@@ -18,50 +18,11 @@
     <!-- custom styles -->
     <link rel="stylesheet" type="text/css" href="./css/demo.css?v=15">
 
-    <script src="https://addthisevent.com/libs/ate-latest.min.js"></script>
-    <script>
-        // Settings for calendar integration
-        addthisevent.settings({
-            license    : "replace-with-your-licensekey",
-            mouse      : false,
-            css        : false,
-            outlook    : {show:true, text:"Outlook Calendar"},
-            google     : {show:true, text:"Google Calendar"},
-            yahoo      : {show:true, text:"Yahoo Calendar"},
-            outlookcom : {show:true, text:"Outlook.com"},
-            appleical  : {show:true, text:"Apple iCalendar"},
-            facebook   : {show:true, text:"Facebook Event"},
-            dropdown   : {order:"appleical,google,facebook,outlook,outlookcom,yahoo"}
-        });
-    </script>
+
 </head>
 
 <body>
-    <!-- NAVIGATION BAR -->
-    <nav id="header" class="header navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#bus">Bus</a></li>
-                    <li><a href="#promo">Video</a></li>
-                    <li><a href="#schedule">Schedule</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#sponsors">Sponsors</a></li>
-<!--                <li><a target="_blank" href="live/index.html">Live</a></li> -->
-                </ul>
-            </div>
-        </div>
-    </nav>
+   
 
     <!-- MAIN PAGE SECTION  -->
     <div id="top" class="demo-3a scrollto">
@@ -69,13 +30,13 @@
             <div id="large-header" class="large-header">
                 <canvas id="demo-canvas"></canvas>
                 <div class="main-title">
-                    <img src="img/traininglogo.png" class="m-t-2.5em" border="0" alt="Null">
+                    <img src="img/hacklogo.png" class="m-t-2.5em" style = "margin-bottom: 5px;"border="0" alt="Null">
                     <br>
-                    <p class="rwd-line">April 25th, 2015</p>
-                    <p class="rwd-line">@ <a target="rss" href="http://bit.ly/1DDoi7I"><img src="img/paypal-logo.png"></a></p>
-                    <p class="m-t-1em lead">
-                        <a class="typeform-share main-btn btn-1 sponsor-btn-pad col-xs-12 col-md-6" href="https://hackingedu.typeform.com/to/Vub48x" data-mode="2" target="_blank">Apply Now</a>
-                        <a class="typeform-share main-btn btn-2 sponsor-btn-pad col-xs-12 col-md-6" href="https://hackingedu.typeform.com/to/BEXo5M" data-mode="2" target="_blank">Sponsor</a>
+                    <p class="rwd-line" style="font-size:17.5px;">Thanks for coming to Training Day!</p>
+                    <p style="font-size:17.5px; text-align:center;"><a href="https://www.facebook.com/media/set/?set=a.1094125007268211.1073741831.909177169096330&type=3" target="_blank">Photos here</a> and <a href="#content">Video below!</a></p>
+                    <a class="typeform-share main-btn btn-1 sponsor-btn-pad col-xs-12 col-md-6" href="https://docs.google.com/file/d/0BzI2Lz_qv89jTnUzeXNKU1M2Qjg/edit" data-mode="2" target="_blank">Sponsor</a>
+                        <a class="typeform-share main-btn btn-2 sponsor-btn-pad col-xs-12 col-md-6" href="https://drive.google.com/file/d/0BzI2Lz_qv89jY181ZUIwZXY4ZkE/view" data-mode="2" target="_blank">Packages</a>
+                        
                     </p>
                 </div>
         </div>
@@ -87,315 +48,18 @@
         </div>
     </div>
 
-    <!--  WHAT/WHY/WHERE SECTION  -->
-    <div id="about" class="container codrops-header scrollto">
-        <div class="col-md-4">
-            <h2>What</h2>
-            <br>
-            <p><span class="special">HackingEDU Training Day is a pre-hackathon event full of workshops and hands-on-training. For an entire day, mentors and tech guides will give talks on various technologies and work with students to help them master the tools they will need to take their skills to the next level.</span></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Why</h2>
-            <br>
-            <p><span class="special">Want to learn a new API, language or framework? Have a specific question or issue? Come to Training Day and learn from the best! Attendees are guaranteed admission to the main Hackathon in October and access to view the talks and recordings, so sign up today!</span></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Where</h2>
-            <br>
-            <div title="Add to Calendar" class="addthisevent" data-track="_gaq.push(['_trackEvent','AddThisEvent','click','ate-calendar'])">
-                Add to Calendar
-                <span class="arrow">&nbsp;</span>
-                <span class="start">04/25/2015 12:00 PM</span>
-                <span class="end">04/25/2015 08:00 PM</span>
-                <span class="timezone">America/Los_Angeles</span>
-                <span class="title">HackingEDU Training Day</span>
-                <span class="description">HackingEDU Training Day is a pre-hackathon event full of workshops and hands-on-training. For an entire day, mentors and tech guides will give talks on various technologies and work with students to help them master the tools they will need to take their skills to the next level.</span>
-                <span class="location">Paypal Town Hall, 2161 N 1st St, San Jose, CA 95131</span>
-                <span class="organizer">HackingEDU</span>
-                <span class="organizer_email">team@hackingedu.co</span>
-                <span class="facebook_event">https://www.facebook.com/events/361191184065041</span>
-                <span class="all_day_event">false</span>
-                <span class="date_format">MM/DD/YYYY</span>
-                <span class="alarm_reminder">60</span>
-            </div>
-            <br><br>
-            <p class="text-center"><span class="special">
-                <a target="rss" href="http://bit.ly/1DDoi7I">Paypal Town Hall<br>2161 N 1st St<br>San Jose, CA 95131</a>
-                <br><br>Can't make it? Watch the recordings later!
-            </span></p>
-        </div>
-    </div>
+  
 
-    <hr>
+   <a class="arrow-wrap" style="margin-top:-95px;" href="#content">
+    <span class="arrow"></span>
+  </a>  
 
-    <!--  TRANSPORTATION SECTION  -->
-    <section id="bus" class="sponsorsSection fluid-container scheduleSection scrollto">
-        <div class="container">
-            <h2 style="padding-top:5vh">Transportation</h2>
-            <!-- CARPOOL -->
-            <div class="col-md-4">
-                <h3 style="padding-top:5vh">Carpool</h3>
-                <h4 class="footnote scheduleFootnote"><a target="rss" href="http://www.rickyrides.com/trainingday">Find a carpool ride here!</a></h4>
-                <a target="rss" href="http://www.rickyrides.com/trainingday"><img src="http://www.projectshelter.org/wp-content/uploads/2012/07/Ricky-Rides-Logo.png" /></a>
-            </div>
-            <!-- BUS TIMES -->
-            <div class="col-md-4">
-                <h3 style="padding-top:5vh">Bus Times</h3>
-                <div class="scheduleEvent">
-                    <div class="col1">
-                        <h3><a target="rss" href="http://bit.ly/1zJGYxm">UC Davis </a></h3>
-                        <p>457 Memorial Union <br> Davis, CA, 95616</p>
-                    </div>
-                    <div class="col2 move-up">
-                        <p>Departing 9:45am</p>
-                    </div>
-                </div>
-                <div class="scheduleEvent">
-                    <div class="col1">
-                        <h3><a target="rss" href="http://bit.ly/1EqvCpw">UC Berkeley </a></h3>
-                        <p>West Entrance <br> Berkeley, CA, 94704</p>
-                    </div>
-                    <div class="col2 move-up">
-                        <p>Departing 10:30am</p>
-                    </div>
-                </div>
-            </div>
-            <!-- LYFT RIDES -->
-            <div class="col-md-4">
-                <h3 style="padding-top:5vh">Lyft Rides</h3>
-                <h4>Lyft Code: <span class="lyft">HACKINGEDU302726</span></h4>
-                <h4><a target="rss" href="https://lyft.com/i/HACKINGEDU302726">Get $20 Lyft credit to Training Day here!</a></h4>
-                <a target="rss" href="https://lyft.com/i/HACKINGEDU302726"><img src="http://www.ridesharedeals.com/wp-content/uploads/2014/06/pink-moustache-lyft-deal-300x137.png" /></a>
-            </div>
-        </div>
-        <br><!-- USE LESS BR TAGS -->
-    </section>
 
     <!--  VIDEO SECTION  -->
-    <div id="promo" class="videoContainer scrollto">
-       <iframe id="video_iframe" width="100%" height="100%" src="https://www.youtube.com/embed/pBwJFrJcV-A" frameborder="0" rel="0"allowfullscreen></iframe>
+    <div id="content" class="videoContainer scrollto">
+       <iframe id="video_iframe" width="100%" height="100%" src="https://www.youtube.com/embed/ktPx5vj6us8" frameborder="0" rel="0"allowfullscreen></iframe>
     </div>
 
-    <!--  SCHEDULE SECTION  -->
-    <section id="schedule" class="sponsorsSection fluid-container scheduleSection scrollto">
-        <div class="container">
-            <h2>Schedule</h2>
-
-            <div class="schedule">
-                <div class="scheduleEvent">
-                    <div class="col1">
-                        <h3>Shuttles Arrive</h3>
-                    </div>
-                    <div class="col2 move-up">
-                        <p>12:00pm - 12:30pm</p>
-                    </div>
-                </div>
-                <div class="scheduleEvent">
-                    <div class="col1">
-                        <h3>Lunch</h3>
-                        <p><i class="italicshift">Foyer</i>
-                        </p>
-                    </div>
-                    <div class="col2 move-up">
-                        <p>12:00pm - 1:00pm</p>
-                    </div>
-                </div>
-                <div class="scheduleEvent">
-                    <div class="col1">
-                        <h3>Opening Ceremony</h3>
-                        <p><i class="italicshift">Town Square</i>
-                        </p>
-                    </div>
-                    <div class="col2 move-up">
-                        <p>1:00pm - 1:20pm</p>
-                    </div>
-                </div>
-                <div class="scheduleEvent">
-                    <div class="col1">
-                        <h3>Workshops: Round 1</h3>
-                        <h4>IBM: <span class="light-medium">Simplified App Development in the Cloud</span></h4>
-                        <p><i class="italicshift">Fireside A & B</i>
-                        </p>
-                        <h4>Pebble: <span class="light-medium">It's Time for Pebble Development</span></h4>
-                        <p><i class="italicshift">Fireside C & D</i>
-                        </p>
-                        <h4>Twillio: <span class="light-medium">Making Phones Ring with the Twilio API</span></h4>
-                        <p><i class="italicshift">Round Table (upstairs)</i>
-                        </p>
-                        <h4>Draper U: <span class="light-medium">You only got 1 minute to save the world</span></h4>
-                        <p><i class="italicshift">Parley Room</i>
-                        </p>
-                    </div>
-                    <div class="col2 move-up">
-                        <p>1:30pm - 2:50pm</p>
-                    </div>
-                </div>
-                <div class="scheduleEvent">
-                    <div class="col1">
-                        <h3>Workshops: Round 2</h3>
-                        <h4>Chegg: <span class="light-medium">Web Capture the Flag</span></h4>
-                        <p><i class="italicshift">Fireside A & B</i>
-                        </p>
-                        <h4>Firebase: <span class="light-medium">Realtime in Moments</span></h4>
-                        <p><i class="italicshift">Fireside C & D</i>
-                        </p>
-                        <h4>Make School: <span class="light-medium">Build Flappy Bird in an Hour</span></h4>
-                        <p><i class="italicshift">Round Table (upstairs)</i>
-                        </p>
-                        <h4>HackingEDU: <span class="light-medium">Recruitment</span></h4>
-                        <p><i class="italicshift">Parley Room</i>
-                        </p>
-                    </div>
-                    <div class="col2 move-up">
-                        <p>3:00pm - 4:20pm</p>
-                    </div>
-                </div>
-                <div class="scheduleEvent">
-                    <div class="col1">
-                        <h3>Workshops: Round 3</h3>
-                        <h4>Twist: <span class="light-medium">BioJS</span></h4>
-                        <p><i class="italicshift">Fireside A & B</i>
-                        </p>
-                        <h4>Paypal: <span class="light-medium">Node.js</span></h4>
-                        <p><i class="italicshift">Fireside C & D</i>
-                        </p>
-                        <h4>Socket.io & Twitter Bootstrap</h4>
-                        <p><i class="italicshift">Round Table (upstairs)</i>
-                        </p>
-                        <h4>GunDB: <span class="light-medium">Databases without database pains</span></h4>
-                        <p><i class="italicshift">Parley Room</i>
-                        </p>
-                    </div>
-                    <div class="col2 move-up move-up">
-                        <p>4:30pm - 5:50pm</p>
-                    </div>
-                </div>
-                <div class="scheduleEvent">
-                    <div class="col1">
-                        <h3>Startup Founder Talks</h3>
-                        <h4><span class="lighter-medium">Socket.io & Twitter Bootstrap</span></h4>
-                        <p><i class="italicshift">Town Square</i>
-                        </p>
-                    </div>
-                    <div class="col2 move-up">
-                        <p>6:30pm - 7:30pm</p>
-                    </div>
-                </div>
-                <div class="scheduleEvent">
-                    <div class="col1">
-                        <h3>Closing Ceremony</h3>
-                    </div>
-                    <div class="col2 move-up">
-                        <p>7:30pm - 7:40pm</p>
-                    </div>
-                </div>
-                <div class="scheduleEvent">
-                    <div class="col1">
-                        <h3>Shuttles Depart</h3>
-                    </div>
-                    <div class="col2 move-up">
-                        <p>8:00pm</p>
-                    </div>
-                </div>
-                <div class="scheduleEvent">
-                    <div class="col1">
-                        <h3>Doors Close</h3>
-                    </div>
-                    <div class="col2 move-up">
-                        <p>8:30pm</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <!-- USE LESS BR TAGS -->
-        <p class="footnote scheduleFootnote">Schedule is subject to change</p>
-    </section>
-
-    <!-- FAQs SECTION   -->
-    <section id="faq" class="container scrollto">
-        <hr>
-        <h2>FAQ</h2>
-        <a id="hacker_faq_link" class="mob-txt-enlrg blue semibold" href="">Hacker FAQ
-        </a> | <a id="sponsor_faq_link" class="mob-txt-enlrg blue semibold" href="">Sponsor FAQ</a>
-        <div class="m-t-2em m-b-2em">
-            <div id="hacker_faq">
-                <div class="col-lg-3">
-                    <h3>What should I bring?</h3>
-                    <p class="mob-txt-enlrg">A government ID, your laptop, and a hunger for learning!</p>
-                </div>
-                <div class="col-lg-3">
-                    <h3>How do I get there?</h3>
-                    <p class="mob-txt-enlrg">We will have shuttles available from UC Davis and UC Berkeley. There is also ample parking if you want to drive, and you can also take Caltrain/Public Transportation.<br><br><a target="rss" href="http://bit.ly/1DDoi7I">Directions to Training Day</a></p>
-                </div>
-                <div class="col-lg-3">
-                    <h3>How can I get a shuttle to my school?</h3>
-                    <p class="mob-txt-enlrg">Send us an email at <a href="mailto:team@hackingedu.co">team@hackingedu.co</a> and get your friends to sign up! Shuttles will be provided to the schools with the largest amount of signups in the SF Bay Area.</p>
-                </div>
-                <div class="col-lg-3">
-                    <h3>Will there be food?</h3>
-                    <p class="mob-txt-enlrg">YES! We are providing food & beverages for all attendees at no cost.</p>
-                </div>
-            </div>
-            <div id="sponsor_faq" style="display: none;">
-                <div class="col-lg-4">
-                    <h3>How about the full sponsorship package?</h3>
-                    <p class="mob-txt-enlrg">We have a comprehensive sponsorship document right <a target="rss" href="https://docs.google.com/a/ucdavis.edu/file/d/0BzI2Lz_qv89jY181ZUIwZXY4ZkE">here!</a></p>
-                </div>
-                <div class="col-lg-4">
-                    <h3>I'm interested in custom Sponsorship Packages.</h3>
-                    <p class="mob-txt-enlrg">No problem! Contact us at <a href="mailto:sponsor@hackingedu.co">sponsor@hackingedu.co</a> and let us know what you are interested in. We have special options for Startups, Incubators & VCs, and we are always willing to work with companies to create a custom package that works best for you.</p>
-                </div>
-                <div class="col-lg-4">
-                    <h3>Can I still register for a workshop on Training Day?</h3>
-                    <p class="mob-txt-enlrg">We only have a couple slots left, so if you are interested, contact us right away at <a href="mailto:sponsor@hackingedu.co">sponsor@hackingedu.co</a>.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SPONSORSHIP SECTION   -->
-    <section id="sponsors" class="scrollto">
-        <section class="content-frame">
-            <section id="sponsor-logos" class="sponsors">
-                <h2>Sponsors</h2>
-                <div class="masters">
-                    <a href="http://chegg.com" class="rollover"><img src="img/sponsors/chegg.png"></a>
-                    </a>
-                </div>
-                <div class="senior">
-                    <a href="http://paypal.com" class="rollover"><img class="mg-t-1" src="img/sponsors/paypal.jpg"></a>
-                    <a href="http://ibm.com/cloud" class="rollover"><img src="img/sponsors/ibm.jpg"></a>
-                    <a href="http://automattic.com" style="height: 4em" class="col-md-offset-3 rollover"><img src="img/sponsors/automattic.jpg"></a>
-                </div>
-                <div class="junior">
-                    <a href="http://developer.getpebble.com" class="rollover"><img src="img/sponsors/pebble.png"></a>                    <a href="http://leapmotion.com" class="rollover"><img src="img/leapmotion.png"></a>
-                    <a href="http://makeschool.com" class="rollover"><img src="img/sponsors/makeschool.png"></a>
-                    <a href="http://twilio.com" class=" rollover"><img src="img/sponsors/twilio.png"></a>
-                    <a href="http://www.twistbioscience.com/" class="rollover"><img src="img/sponsors/twist.png" style="max-height: 120%; margin-top: -.1em"></a>
-                    <a href="http://draperuniversity.com" class="rollover" style="float: center"><img src="img/sponsors/draper.png"></a>
-                </div>
-                <div class="sophomore">
-                    <a href="http://getbootstrap.com" class="rollover"><img src="img/sponsors/bootstrap.png"></a>
-                    <a href="http://lyft.com" class="rollover"><img src="img/sponsors/lyft.png"></a>
-                    <a href="http://namecheap.com" class="rollover" style="margin: -.5rem 0 .5rem;"><img src="img/sponsors/namecheap.png"></a>
-                    <a href="http://socket.io" class="rollover"><img src="img/sponsors/socket.png"></a>
-                    <a href="http://edsurge.com" class="rollover"><img src="img/sponsors/edsurge.jpg"></a>
-                    <a href="http://google.com" class="rollover"><img src="img/sponsors/google.png"></a>
-                    <a href="http://firebase.com" class="rollover"><img style="width: 5em" src="img/sponsors/firebase.png"></a>
-                    <a href="http://thalmic.com" class="rollover"><img style="width: 9em" src="img/sponsors/thalmiclabs.png"></a>
-                    <a href="http://gundb.io" class="rollover"><img style="margin-top: .25em" src="img/sponsors/gun.png"></a>
-                </div>
-                <h2>Partners</h2>
-                <div class="partner" style="border-bottom: none;">
-                    <a href="http://pearlhacks.com" class="rollover pearlhacks"><img src="img/partners/pearlhacks.png"></a>
-                    <a href="http://nwhacks.com" class="rollover"><img src="img/partners/nwhacks.jpg"></a>
-                    <a href="http://lahacks.com" class="rollover"><img src="img/partners/lahacks.jpeg"></a>
-                </div>
-            </section>
-        </section>
-    </section>
 
     <!-- Imported scripts -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
