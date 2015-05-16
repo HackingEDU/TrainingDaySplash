@@ -12,3 +12,4 @@
 5) GIT PULL again after changes are made. If any conflicts arise, please resolve and post in the technical channel
 
 6) If the Technical Director OR a Co-founder approves of the change (or if you have pre approval from one of them), then and ONLY THEN, push the branch to live site. 
+# HackingEDU-TrainingDay
